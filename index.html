@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>IBCN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+<header>
+  <div class="nav-container">
+    <img src="assets/iedu.png" alt="iEduReach Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#we-serve-section">Programs</a></li> 
+        <li><a href="#">Solutions</a></li>
+        <li><a href="#">Connect us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Empowering Future Buisness Leaders</h1>
+      <p>Practical Buisness coaching mentoring and incubation for students and aspiring enterpreneurs</p>
+      <a href="contact.html" class="btn-primary">Let's Connect</a>
+    </div>
+  </section>
+
+  <!-- What We Do Section -->
+<section class="what-we-do">
+    <div class="container">
+      <h2 class="section-title">What We Do?</h2>
+      <div class="services-grid">
+  
+        <div class="service-item">
+  <!-- <img src="assets/admission.JPG" alt="Admission Marketing"> -->
+  <h3>Business Coaching for Students</h3>
+  <p>"Learn core business principles through structured programs designed for school and college students."</p>
+</div>
+
+<div class="service-item">
+  <!-- <img src="assets/social-media.JPG" alt="Social Media Advertising"> -->
+  <h3>Startup Incubation & Mentorship</h3>
+  <p>"Turn your ideas into startups with expert guidance, one-on-one mentorship, and incubation support."</p>
+</div>
+
+<div class="service-item">
+  <!-- <img src="assets/seo.png" alt="SEO"> -->
+  <h3>Live Project & Practical Exposure</h3>
+  <p>"Work on real business projects to gain hands-on experience and build your entrepreneurial portfolio."</p>
+</div>
+
+<div class="service-item">
+  <!-- <img src="assets/brand.JPG" alt="Brand Campaigns"> -->
+  <h3>Expert-Led Workshops & Webinars</h3>
+  <p>"Attend interactive sessions by industry leaders to learn modern business tools, strategies, and skills."</p>
+</div>
+
+<div class="service-item">
+  <!-- <img src="assets/traditional.JPG" alt="Outdoor Marketing"> -->
+  <h3>Access to Innovation Hub & Networking</h3>
+  <p>"Collaborate in a co-working space, connect with peers, and network with professionals and investors."</p>
+</div>
+
+<div class="service-item">
+  <!-- <img src="assets/parent.JPG" alt="Parent Engagement"> -->
+  <h3>IBCN Club Membership</h3>
+  <p>"Join an exclusive club to enjoy ongoing support, resources, events, and premium learning content."</p>
+</div>
+
+  </section>  
+
+  <section id="we-serve-section" class="we-serve">
+  <div class="container">
+    <h2 class="section-title">Our Programs</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Basic Course</h3>
+        <h2>₹3,000 / month</h2>
+        <ul>
+          <li>50 students</li>
+          <li>Foundational concepts</li>
+          <li>Weekend sessions</li>
+        </ul>
+        <button class="join-btn" onclick="openForm('Basic Course', '₹3000 / month')">Join Now</button>
+      </div>
+      <div class="card">
+        <h3>Advanced Course</h3>
+        <h2>₹5,000 / 45 days</h2>
+        <ul>
+          <li>25 students</li>
+          <li>Hands-on projects</li>
+          <li>Guest mentors</li>
+        </ul>
+        <button class="join-btn" onclick="openForm('Advanced Course', '₹5000 / 45 days')">Join Now</button>
+      </div>
+      <div class="card">
+        <h3>Specialized Course</h3>
+        <h2>₹10,000 / 6 months</h2>
+        <ul>
+          <li>10 students</li>
+          <li>Domain deep-dive</li>
+          <li>Startup showcase</li>
+        </ul>
+        <button class="join-btn" onclick="openForm('Specialized Course', '₹10000 / 6 months')">Join Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Registration Form (Initially Hidden) -->
+<div id="registrationForm" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background-color:white; padding:20px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); max-width:400px; width:100%;">
+  <h2>Registration Form</h2>
+  <form id="formData">
+    <input type="text" id="name" placeholder="Your Name" style="width: 100%; padding: 8px; margin: 10px 0;">
+    <input type="email" id="email" placeholder="Your Email" style="width: 100%; padding: 8px; margin: 10px 0;">
+    <input type="text" id="phone" placeholder="Your Phone" style="width: 100%; padding: 8px; margin: 10px 0;">
+    <input type="text" id="address" placeholder="Your Address" style="width: 100%; padding: 8px; margin: 10px 0;">
+    <div>
+      <button type="button" onclick="submitForm()" style="background-color: black; color: white; padding: 10px 15px; font-weight: bold; border-radius: 6px; width: 100%;">Submit</button>
+      <button type="button" onclick="closeForm()" style="background-color: red; color: white; padding: 10px 15px; font-weight: bold; border-radius: 6px; width: 100%; margin-top: 10px;">Close</button>
+    </div>
+  </form>
+</div>
+
+<script>
+  // Function to open the form when 'Join Now' is clicked
+  function openForm(courseName, coursePrice) {
+    document.getElementById('registrationForm').style.display = 'block';
+    // Optionally, store the course name and price (or other data) for sending to WhatsApp
+    window.selectedCourse = {
+      name: courseName,
+      price: coursePrice
+    };
+  }
+
+  // Function to close the registration form
+  function closeForm() {
+    document.getElementById('registrationForm').style.display = 'none';
+  }
+
+  // Function to submit the form and send data to WhatsApp
+  function submitForm() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+    var address = document.getElementById('address').value;
+
+    // Ensure all fields are filled
+    if (name && email && phone && address) {
+      // Construct the message to be sent to WhatsApp
+      var message = `New Registration for ${window.selectedCourse.name} (${window.selectedCourse.price})\n
+      Name: ${name}\n
+      Email: ${email}\n
+      Phone: ${phone}\n
+      Address: ${address}`;
+
+      // URL-encode the message and create the WhatsApp link
+      var whatsappLink = `https://wa.me/+917770016039?text=${encodeURIComponent(message)}`;
+
+      // Open the WhatsApp link
+      window.open(whatsappLink, '_blank');
+
+      // Close the form
+      closeForm();
+    } else {
+      alert("Please fill in all fields.");
+    }
+  }
+</script>
+
+<section id="we-serve-section" class="we-serve">
+  <div class="container">
+    <h2 class="section-title">IBCN Club Membership</h2>
+    <div class="card-grid" style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+      
+      <!-- Bronze Membership -->
+      <div class="card bronze">
+        <h3>Bronze Membership</h3>
+        <h2>₹999 / year</h2>
+        <ul>
+          <li>Basic business tools</li>
+          <li>Monthly newsletter</li>
+          <li>Community access</li>
+        </ul>
+        <button class="join-btn" onclick="openOTPForm('bronze')">Join Now</button>
+      </div>
+
+      <!-- Silver Membership -->
+      <div class="card silver">
+        <h3>Silver Membership</h3>
+        <h2>₹2,499 / year</h2>
+        <ul>
+          <li>All Bronze features</li>
+          <li>Webinar access</li>
+          <li>Business templates</li>
+        </ul>
+        <button class="join-btn" onclick="openOTPForm('silver')">Join Now</button>
+      </div>
+
+      <!-- Gold Membership -->
+      <div class="card gold">
+        <h3>Gold Membership</h3>
+        <h2>₹4,999 / year</h2>
+        <ul>
+          <li>All Silver features</li>
+          <li>1-on-1 mentor session</li>
+          <li>Feature in IBCN Digest</li>
+        </ul>
+        <button class="join-btn" onclick="openOTPForm('gold')">Join Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OTP Registration Form -->
+<div id="otpModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 1000;">
+  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 2rem; border-radius: 10px; width: 400px;">
+    <h2>Enter Your Phone Number</h2>
+    <input type="text" id="phoneNumber" placeholder="Enter phone number" style="width: 100%; padding: 0.6rem; margin-top: 0.5rem; border: 1px solid #ccc; border-radius: 5px;">
+    <button id="otpBtn" style="background: black; color: white; padding: 0.6rem 1.5rem; border-radius: 5px; font-weight: 600; margin-top: 1rem;">Send OTP</button>
+    <div id="otpForm" style="display: none;">
+      <input type="text" id="otp" placeholder="Enter OTP" style="width: 100%; padding: 0.6rem; margin-top: 0.5rem; border: 1px solid #ccc; border-radius: 5px;">
+      <button id="verifyOtpBtn" style="background: black; color: white; padding: 0.6rem 1.5rem; border-radius: 5px; font-weight: 600; margin-top: 1rem;">Verify OTP</button>
+    </div>
+    <button id="closeBtn" style="position: absolute; top: 10px; right: 10px; background: red; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 50%; cursor: pointer;">X</button>
+  </div>
+</div>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+  var selectedPlan = ''; // Variable to store selected plan
+
+  // Open OTP Modal on "Join Now"
+  function openOTPForm(plan) {
+    selectedPlan = plan;  // Store the selected plan
+    document.getElementById('otpModal').style.display = 'block'; 
+  }
+
+  // Close the OTP Modal
+  document.getElementById('closeBtn').addEventListener('click', function() {
+    document.getElementById('otpModal').style.display = 'none';
+  });
+
+  // Send OTP when clicking "Send OTP"
+  document.getElementById('otpBtn').addEventListener('click', function() {
+    var phoneNumber = document.getElementById('phoneNumber').value;
+    
+    if (phoneNumber) {
+      alert('OTP sent to ' + phoneNumber);
+      document.getElementById('otpForm').style.display = 'block'; // Show OTP input
+    } else {
+      alert('Please enter a valid phone number');
+    }
+  });
+
+  // Verify OTP when clicking "Verify OTP"
+  document.getElementById('verifyOtpBtn').addEventListener('click', function() {
+    var otp = document.getElementById('otp').value;
+    
+    if (otp) {
+      alert('OTP Verified');
+      initiatePayment();  // Proceed to payment after OTP verification
+    } else {
+      alert('Please enter the OTP');
+    }
+  });
+
+  // Razorpay Payment Integration
+  function initiatePayment() {
+    var options = {
+      "key": "YOUR_RAZORPAY_KEY", // Replace with your Razorpay key
+      "amount": selectedPlan === 'bronze' ? 999 : selectedPlan === 'silver' ? 2499 : 4999, 
+      "currency": "INR",
+      "name": "IBCN Club Membership",
+      "description": selectedPlan.charAt(0).toUpperCase() + selectedPlan.slice(1) + " Membership",
+      "image": "https://example.com/logo.png",  // Optional: Logo of your company
+      "handler": function(response) {
+        // Send email confirmation on successful payment
+        sendEmailConfirmation(response.razorpay_payment_id);
+      },
+      "prefill": {
+        "name": "User",
+        "email": "user@example.com",
+        "contact": "1234567890"
+      },
+      "theme": {
+        "color": "#000000"
+      }
+    };
+    var rzp1 = new Razorpay(options);
+    rzp1.open();
+  }
+
+  // Send email confirmation (dummy function)
+  function sendEmailConfirmation(paymentId) {
+    // Here you would integrate with an email service (e.g. SendGrid, EmailJS) to send confirmation email.
+    alert('Payment successful. Confirmation email sent to support@ibcn.org.in');
+  }
+</script>
+
+<section id="startup-incubation" style="padding: 2rem; font-family: Arial, sans-serif; background: #f9f9f9; display: flex; flex-direction: column; align-items: center;">
+  <h1 style="font-weight: 900; font-size: 2rem; margin-bottom: 2rem; color: #111;">Startup Incubation Plan</h1>
+
+  <div style="background: white; padding: 2rem 3rem; border-radius: 1rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); max-width: 600px; width: 100%;">
+    <h2 style="font-weight: 700; font-size: 1.5rem; margin-bottom: 1rem; color: #111;">IBCN LaunchPad</h2>
+    <ul style="list-style-type: disc; padding-left: 1.5rem; color: #555; font-size: 1.1rem; line-height: 1.6;">
+      <li>Dedicated mentor &amp; weekly 1-on-1 reviews</li>
+      <li>Co-working space at Nagpur Innovation Hub</li>
+      <li>Technical, legal &amp; financial advisory</li>
+      <li>Pitch-deck polishing &amp; demo-day exposure</li>
+      <li>Investor introductions &amp; seed-fund guidance</li>
+    </ul>
+    <div style="text-align: center; margin-top: 2rem;">
+      <button id="applyBtn" style="background: black; color: white; border: none; padding: 0.6rem 1.5rem; border-radius: 0.4rem; font-weight: 600; cursor: pointer;">Apply for Incubation</button>
+    </div>
+  </div>
+</section>
+
+<!-- Modal for Registration Form -->
+<div id="modal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 1000;">
+  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 2rem; border-radius: 10px; width: 400px;">
+    <h2>Register for Incubation</h2>
+    <form action="https://formspree.io/f/{your-form-id}" method="POST">
+      <div style="margin-bottom: 1rem;">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; border: 1px solid #ccc; border-radius: 5px;">
+      </div>
+      <div style="margin-bottom: 1rem;">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; border: 1px solid #ccc; border-radius: 5px;">
+      </div>
+      <div style="margin-bottom: 1rem;">
+        <label for="startup-name">Startup Name</label>
+        <input type="text" id="startup-name" name="startup-name" required style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; border: 1px solid #ccc; border-radius: 5px;">
+      </div>
+      <div style="margin-bottom: 1rem;">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+      </div>
+      <div style="text-align: center;">
+        <button type="submit" style="background: black; color: white; padding: 0.6rem 1.5rem; border-radius: 0.4rem; font-weight: 600; cursor: pointer;">Submit</button>
+      </div>
+    </form>
+    <button id="closeBtn" style="position: absolute; top: 10px; right: 10px; background: red; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 50%; cursor: pointer;">X</button>
+  </div>
+</div>
+
+<script>
+  // Show modal on "Apply for Incubation" click
+  document.getElementById('applyBtn').addEventListener('click', function() {
+    document.getElementById('modal').style.display = 'block';
+  });
+
+  // Close modal on "X" click
+  document.getElementById('closeBtn').addEventListener('click', function() {
+    document.getElementById('modal').style.display = 'none';
+  });
+</script>
+
+
+  
+  <!-- CTA Section: Integrated Marketing
+<section class="cta-section">
+    <div class="cta-overlay">
+      <h2>Integrated Marketing for Education!</h2>
+      <p>Maximize your impact with a seamless blend of <strong>digital and traditional marketing strategies</strong>. Let’s drive enrollments and build your institution’s brand today with</p>
+      <span class="cta-sub">iEduReach - Marketing Agency for Education.</span>
+      <br>
+      <a href="#" class="cta-button">Explore More!</a>
+    </div>
+  </section> -->
+  <!-- CTA Strip Section -->
+
+    </div>
+  </section>
+ <section class="features-section">
+  <div class="container">
+    <h2 class="section-title">Our Features</h2>
+    <div class="features-grid">
+      <div class="features-left">
+        <div class="feature-item">
+          <h4>Entrepreneurial Coaching</h4>
+          <p>Learn real business fundamentals from industry mentors and startup founders.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Live Projects & Fieldwork</h4>
+          <p>Gain hands-on experience by working on real-world projects with measurable outcomes.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Startup Incubation Support</h4>
+          <p>Get guided access to incubation, mentorship, and investor readiness programs.</p>
+        </div>
+      </div>
+      <div class="features-right">
+        <div class="feature-item">
+          <h4>Small Batch Focus</h4>
+          <p>We ensure high mentor–student interaction with limited seats per batch for personal growth.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Offline & Online Hybrid Learning</h4>
+          <p>Flexible learning options to suit school schedules and diverse learning preferences.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Community & Networking</h4>
+          <p>Become part of a growing community of creators, investors, and innovators through IBCN.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </section>
+<!-- About IBCN Section -->
+<section class="about-section">
+  <div class="container about-grid">
+    <div class="about-content">
+      <h2>About IBCN</h2>
+      <p>The International Business Creators Network (IBCN) is a transformative platform for young minds and budding entrepreneurs. We blend theory with real-world practice, guiding learners from idea to launch through mentorship, live projects, and startup incubation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose IBCN Section -->
+<section class="why-section">
+  <div class="container why-grid">
+    <div class="why-content">
+      <h2>Why Choose IBCN?</h2>
+      <p>At IBCN, we don’t just teach business — we create business leaders. Our programs are grounded in real-world execution, offering students direct access to experienced mentors, live startup projects, and business incubation. Whether you're looking to build a startup, join a vibrant community of innovators, or gain practical tools for entrepreneurial success, IBCN empowers you with the ecosystem to turn ideas into impact.</p>
+    </div>
+  </div>
+</section>
+
+
+
+ <section class="testimonial-section" style="background-color: #f5f5f5; padding: 3rem 0;">
+  <div class="container" style="max-width: 1200px; margin: 0 auto; text-align: center;">
+    <h2 style="font-weight: 900; font-size: 2rem; margin-bottom: 2rem;">What Our Students Say</h2>
+    <div class="testimonial-grid" style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+
+      <div class="testimonial-card" style="background: #fff; padding: 1.5rem 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgb(0 0 0 / 0.1); max-width: 320px; font-style: italic; font-size: 1.1rem;">
+        <p>"IBCN helped me launch my project in just 3 months!"</p>
+        <p style="font-weight: 700; margin-top: 1rem;">– Riya Sharma</p>
+      </div>
+
+      <div class="testimonial-card" style="background: #fff; padding: 1.5rem 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgb(0 0 0 / 0.1); max-width: 320px; font-style: italic; font-size: 1.1rem;">
+        <p>"Hands-on training and mentorship are unmatched."</p>
+        <p style="font-weight: 700; margin-top: 1rem;">– Aarav Mehta</p>
+      </div>
+
+      <div class="testimonial-card" style="background: #fff; padding: 1.5rem 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgb(0 0 0 / 0.1); max-width: 320px; font-style: italic; font-size: 1.1rem;">
+        <p>"More practical than years of traditional study."</p>
+        <p style="font-weight: 700; margin-top: 1rem;">– Sneha Joshi</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="cta-strip">
+    <div class="cta-strip-container">
+      <div class="cta-text">
+        <h3>Join the Club</h3>
+        <p>Join Now</p>
+      </div>
+      <!-- In your index.html -->
+<a href="contact.html" class="cta-button">Let's Join Club</a>
+  </section>
+  <!-- Footer Section -->
+<footer class="footer-section">
+    <div class="footer-content">
+      <!-- Left Side (Logo + Text) -->
+      <div class="footer-left">
+        <img src="assets/logo.png" alt="iEduReach Logo">
+        <p>The International Business Creators Network (IBCN) is a transformative platform for young minds and budding entrepreneurs. We blend theory with real‑world practice, guiding learners from idea to launch through mentorship, live projects, and startup incubation.</p>
+      </div>
+  
+      <!-- Center (Quick Links) -->
+      <div class="footer-center">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Solutions</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Connect us</a></li>
+        </ul>
+      </div>
+  
+      <!-- Right Side (Contact Info) -->
+      <div class="footer-right">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><strong>Phone:</strong> +91 77700 16039</li>
+          <li><strong>Email:</strong> support@ibcn.org.in</li>
+          <li><strong>Address:</strong> Nagpur</li>
+        </ul>
+
+        <!-- Social Icons -->
+        <div class="social-icons">
+          <a href="https://wa.me/917770016039" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <img src="assets/whatsap.png" alt="WhatsApp">
+          </a>
+
+          <a href="https://instagram.com/ibcn_india" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <img src="assets/instagram-icon.png" alt="Instagram">
+          </a>
+
+          <a href="https://x.com/IBCN_INDIA" target="_blank" aria-label="Twitter">
+            <img src="assets/twitter.png" alt="Twitter">
+          </a>
+
+          <a href="https://www.youtube.com/@IBCN-INDIA" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="assets/youtube.png" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+    </div>
+
+ <!-- partner logos here -->
+      <div class="footer-logos" style="margin-top: 15px; display: flex; gap: 15px; justify-content: center;">
+  <a href="https://www.pocketvendr.com/" target="_blank"><img src="assets/logo1.png" alt="Logo 1" style="width: 30px; height: 30px;"></a>
+  <a href="https://www.arpnfintech.com/" target="_blank"><img src="assets/logo2.png" alt="Logo 2" style="width: 30px; height: 30px;"></a>
+</div>
+
+    <!-- Footer Bottom (Copyright) -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 IBCN | Powered by PocketVendr & ARPN Fintech</p>
+    </div>
+</footer>
+
+
