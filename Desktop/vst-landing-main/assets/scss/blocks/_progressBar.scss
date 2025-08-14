@@ -1,0 +1,40 @@
+/* 2.17 - ProgressBar - Start
+================================================== */
+.progress {
+	height: 22px;
+	padding: 2px;
+	border-radius: 30px;
+	background-color: var(--bs-light);
+	[aria-valuenow="80"] {
+		width: 80%;
+	}
+	[aria-valuenow="85"] {
+		width: 85%;
+	}
+	[aria-valuenow="90"] {
+		width: 90%;
+	}
+	[aria-valuenow="60"] {
+		width: 60%;
+	}
+	[aria-valuenow="94"] {
+		width: 94%;
+	}
+}
+.progress-bar {
+	position: relative;
+	border-radius: inherit;
+	color: var(--bs-heading-color);
+	background-color: var(--bs-primary);
+	&:after {
+		top: 2px;
+		right: 10px;
+		line-height: 1;
+		font-size: 15px;
+		font-weight: 500;
+		position: absolute;
+		content: attr(aria-valuenow)'%';
+	}
+}
+/* 2.17 - ProgressBar - End
+================================================== */

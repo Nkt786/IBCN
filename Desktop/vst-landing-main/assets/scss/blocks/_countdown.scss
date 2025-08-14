@@ -1,0 +1,50 @@
+/* 2.15 - Countdown - Start
+================================================== */
+.countdown_timer_block {
+	gap: 20px;
+	text-align: center;
+	>li {
+		gap: 8px;
+		width: 110px;
+		height: 90px;
+		line-height: 1;
+		padding: 2px 0 0;
+		position: relative;
+		border-radius: 10px;
+		align-items: center;
+		display: inline-flex;
+		justify-content: center;
+		flex-direction: column-reverse;
+		background-color: var(--bs-light);
+		border: 1px solid var(--bs-border-color);
+		&:not(:last-child) {
+			&:after {
+				top: 50%;
+				right: -16px;
+				content: ':';
+				font-size: 36px;
+				font-weight: 700;
+				margin-top: -2px;
+				line-height: 20px;
+				position: absolute;
+				transform: translateY(-50%);
+			}
+		}
+		>* {
+			display: block;
+		}
+	}
+
+	span {
+		font-size: 35px;
+		font-weight: 700;
+		color: var(--bs-heading-color);
+		font-family: var(--bs-heading-font-family);
+	}
+	small {
+		font-size: 14px;
+		font-weight: 500;
+	}
+}
+/* 2.15 - Countdown - End
+================================================== */

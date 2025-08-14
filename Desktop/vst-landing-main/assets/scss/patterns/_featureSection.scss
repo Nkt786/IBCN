@@ -1,0 +1,33 @@
+/* 4.09 - Feature Section - Start
+================================================== */
+.pepecoin_feature_section {
+	.shape_tree {
+		img {
+			max-width: 936px;
+			margin-top: -140px;
+			margin-right: -440px;
+			display: inline-block;
+		}
+	}
+	.shape_stone {
+		z-index: 1;
+		left: -50px;
+		right: -50px;
+		bottom: -70px;
+	}
+	.shape_dragonfly {
+		left: 40%;
+		bottom: 140px;
+		max-width: 150px;
+		img {
+			animation: upDownMover 3s ease-in-out infinite;
+		}
+	}
+	.shape_frog {
+		left: 80px;
+		bottom: 18px;
+		max-width: 280px;
+	}
+}
+/* 4.09 - Feature Section - End
+================================================== */

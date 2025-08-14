@@ -1,0 +1,167 @@
+/* 4.02 - Countdown Section - Start
+================================================== */
+
+// ICO Countdown Section - Start
+.ico_countdown_progress_box {
+	padding: 15px;
+	border-radius: 20px;
+	border: 1px solid rgba(var(--bs-border-color-translucent), 0.60);
+	.countdown_timer_block {
+		gap: 78px;
+		padding: 62px 86px 30px;
+		>li {
+			background-color: var(--bs-dark);
+			border-color: rgba(var(--bs-border-color-translucent), 0.60);
+			&:not(:last-child) {
+				&:after {
+					margin: 0;
+					content: '';
+					width: 18px;
+					height: 7px;
+					right: -49px;
+					line-height: 1;
+					background-size: 100% 100%;
+					background-repeat: no-repeat;
+					background-position: center center;
+					background-image: url('../images/shapes/shape_duble_dot.svg');
+				}
+			}
+		}
+		span {
+			color: var(--bs-white);
+		}
+	}
+}
+
+.ico_progress {
+	border-radius: 10px;
+	padding: 34px 18px 32px;
+	background-color: var(--bs-light);
+	border: 1px solid rgba(47, 51, 109, 0.60);
+}
+.progress_range_step {
+	margin-bottom: 28px;
+	>li {
+		line-height: 1;
+		font-size: 16px;
+		padding: 0 30px;
+		position: relative;
+		&:before {
+			left: 50%;
+			top: 100%;
+			width: 2px;
+			content: '';
+			height: 24px;
+			margin-top: 5px;
+			position: absolute;
+			border-radius: 10px;
+			transform: translateX(-50%);
+			background: linear-gradient(0deg, transparent, var(--bs-primary));
+		}
+	}
+}
+.progress_value {
+	margin-top: 30px;
+	>li {
+		line-height: 1;
+		font-size: 16px;
+	}
+}
+// ICO Countdown Section - End
+
+// ICO Countdown Section - start
+.coin_we_accept {
+	margin-bottom: 60px;
+	.heading_text {
+		line-height: 1;
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+}
+.coins_group {
+	gap: 22px;
+	>li {
+		gap: 10px;
+		text-align: center;
+		display: inline-flex;
+		flex-direction: column;
+	}
+	.coin_icon {
+		max-width: 46px;
+		img {
+			display: block;
+		}
+	}
+	.coin_label {
+		line-height: 1;
+		font-size: 16px;
+		font-weight: 500;
+	}
+}
+
+.memecoin_countdown_wraper {
+	gap: 60px;
+	width: 570px;
+	height: 570px;
+	flex: 0 0 auto;
+	position: relative;
+	border-radius: 100%;
+	align-items: center;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: var(--bs-dark);
+	border: 2px solid var(--bs-dark);
+	outline: 4px solid var(--bs-light);
+	box-shadow: inset 0 0 0 8px var(--bs-primary);
+
+	.shape_circle {
+		top: -19px;
+		left: -23px;
+		right: -19px;
+		bottom: -19px;
+		z-index: -1;
+		position: absolute;
+		animation: spin 30s linear infinite;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.shape_cartoon {
+		top: 50%;
+		left: 52%;
+		z-index: -2;
+		width: 375px;
+		position: absolute;
+		transform: translateY(-50%);
+	}
+	.shape_cartoon_hand {
+		top: 40%;
+		width: 150px;
+		right: -112px;
+		position: absolute;
+	}
+	.heading_text {
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 20px;
+		color: var(--bs-light);
+	}
+}
+
+.meme_progress {
+	width: 420px;
+	flex: 0 0 auto;
+	.progress_value {
+		margin-top: 20px;
+		>li {
+			font-size: 20px;
+			font-weight: 700;
+		}
+	}
+}
+// ICO Countdown Section - End
+
+/* 4.02 - Countdown Section - End
+================================================== */

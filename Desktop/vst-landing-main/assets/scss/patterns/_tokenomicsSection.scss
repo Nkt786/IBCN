@@ -1,0 +1,293 @@
+/* 4.08 - Tokenomics Section - Start
+================================================== */
+
+// Meme Tokenomics - Start
+.meme_tokenomics_section {
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center top;
+	.casino_image {
+		position: relative;
+		.coinpay_animate {
+			left: 50%;
+			top: -14px;
+			z-index: 1;
+			max-width: 164px;
+			position: absolute;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+.meme_tokenomics_distribution {
+	padding: 50px;
+	border-radius: 20px;
+	background-color: var(--bs-dark);
+	border: 1px solid var(--bs-primary);
+	.heading_text {
+		line-height: 1;
+		font-size: 22px;
+		margin-bottom: 34px;
+	}
+	ul {
+		gap: 3px;
+		>li {
+			gap: 10px;
+			display: flex;
+			font-size: 22px;
+			line-height: 30px;
+			align-content: center;
+			color: var(--bs-white);
+			&:nth-child(1) {
+				.text {
+					color: #DF5E08;
+				}
+			}
+			&:nth-child(2) {
+				.text {
+					color: #FC1CCF;
+				}
+			}
+			&:nth-child(3) {
+				.text {
+					color: #07C87F;
+				}
+			}
+			&:nth-child(4) {
+				.text {
+					color: #49B7F7;
+				}
+			}
+			&:nth-child(5) {
+				.text {
+					color: #DABA5E;
+				}
+			}
+			&:nth-child(6) {
+				.text {
+					color: #FE9BE9;
+				}
+			}
+		}
+
+		.icon {
+			width: 16px;
+			flex: 0 0 auto;
+		}
+		.value {
+			flex: 0 0 auto;
+			min-width: 56px;
+			display: inline-flex;
+		}
+	}
+}
+
+.meme_tokenomics_total_supply {
+	line-height: 1;
+	font-size: 20px;
+	margin-bottom: 40px;
+	color: var(--bs-white);
+	font-family: var(--bs-heading-font-family);
+}
+
+.meme_tokenomics_benefits {
+	overflow: hidden;
+	position: relative;
+	border-radius: 20px;
+	padding: 30px 100px 0;
+	background-image: linear-gradient(0deg, var(--bs-primary), transparent);
+	&:before {
+		left: 50%;
+		bottom: 0;
+		z-index: 2;
+		content: '';
+		width: 310px;
+		height: 120px;
+		position: absolute;
+		transform: translateX(-50%);
+		background-image: linear-gradient(0deg, var(--bs-primary), transparent);
+	}
+}
+
+.benefits_features {
+	position: relative;
+	text-align: center;
+	.benefits_circle {
+		gap: 4px;
+		z-index: 1;
+		width: 310px;
+		height: 330px;
+		margin: 0 auto;
+		padding: 71px 0 0;
+		position: relative;
+		border-radius: 100%;
+		align-items: center;
+		display: inline-flex;
+		margin: 340px 0 -95px;
+		flex-direction: column;
+		background-color: var(--bs-dark);
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			border-radius: inherit;
+			border: 1px solid rgba(var(--bs-primary-rgb), 0.15);
+			background-color: rgba(var(--bs-primary-rgb), 0.03);
+		}
+		&:before {
+			inset: -54px;
+		}
+		&:after {
+			inset: -126px;
+		}
+		.percent {
+			display: flex;
+			line-height: 1;
+			font-size: 70px;
+			align-items: center;
+			color: var(--bs-light);
+			font-family: var(--bs-heading-font-family);
+		}
+		.percent_title {
+			line-height: 1;
+			font-size: 20px;
+			font-family: var(--bs-body-font-family);
+		}
+	}
+
+	[class*="benefits_feature_item_"] {
+		z-index: 1;
+		width: 200px;
+		position: absolute;
+		border-radius: 10px;
+		padding: 36px 30px 31px;
+		background-image: linear-gradient(0deg, var(--bs-primary), transparent, transparent, var(--bs-primary));
+		&:before {
+			inset: 1px;
+			z-index: -1;
+			content: '';
+			position: absolute;
+			border-radius: inherit;
+			background-color: var(--bs-dark);
+		}
+		&:after {
+			z-index: 2;
+			content: '';
+			width: 16px;
+			height: 16px;
+			flex: 0 0 auto;
+			position: absolute;
+			border-radius: 100%;
+			outline: 8px solid #20242C;
+			box-shadow: 0 0 20px 10px var(--bs-primary);
+			background-image: linear-gradient(0deg, var(--bs-primary), var(--bs-dark));
+		}
+
+		.icon {
+			font-size: 40px;
+			margin: 0 0 20px;
+			color: var(--bs-light);
+		}
+		.title {
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+	.benefits_feature_item_1 {
+		left: 110px;
+		bottom: 376px;
+		&:after {
+			right: -78px;
+			bottom: -78px;
+		}
+	}
+	.benefits_feature_item_2 {
+		left: 0;
+		bottom: 120px;
+		&:after {
+			right: -76px;
+			bottom: -30px;
+		}
+	}
+	.benefits_feature_item_3 {
+		right: 110px;
+		bottom: 376px;
+		&:after {
+			left: -78px;
+			bottom: -78px;
+		}
+	}
+	.benefits_feature_item_4 {
+		right: 0;
+		bottom: 120px;
+		&:after {
+			left: -76px;
+			bottom: -30px;
+		}
+	}
+}
+// Meme Tokenomics - End
+
+// Pepe Tokenomics - Start
+.pepecoin_tokenomics_section {
+	.shape_shadow {
+		left: 50%;
+		width: 80%;
+		bottom: -70px;
+		filter: blur(400px);
+		transform: translateX(-50%);
+		img {
+			width: 100%;
+		}
+	}
+	.shape_grash {
+		left: 0;
+		right: 0;
+		bottom: 0;
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+}
+
+.pepecoin_token_supply {
+	position: relative;
+	padding: 70px 120px 130px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	.heading_text,
+	.token_supply_value {
+		line-height: 1;
+		font-size: 60px;
+		font-family: var(--bs-heading-font-family);
+	}
+	p {
+		font-size: 24px;
+		font-weight: 600;
+		margin-top: 10px;
+		line-height: 34px;
+	}
+	[class*="shape_tree_wood_"] {
+		bottom: -110px;
+		max-width: 300px;
+		position: absolute;
+	}
+	.shape_tree_wood_1 {
+		left: -30px;
+	}
+	.shape_tree_wood_2 {
+		left: 25%;
+	}
+	.shape_tree_wood_3 {
+		right: 24%;
+	}
+	.shape_tree_wood_4 {
+		right: -46px;
+	}
+}
+// Pepe Tokenomics - End
+
+/* 4.08 - Tokenomics Section - End
+================================================== */

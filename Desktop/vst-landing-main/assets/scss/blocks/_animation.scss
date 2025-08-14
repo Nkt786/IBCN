@@ -1,0 +1,156 @@
+/* 2.01 - CSS Animations - Start
+================================================== */
+
+// Up Down Mover - Start
+@keyframes upDownMover {
+	0%, 100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-20px);
+	}
+}
+.upDownMover {
+	animation: upDownMover 4s ease-in-out infinite;
+}
+// Up Down Mover - End
+
+// Fade In Out - Start
+@keyframes fadeInOut {
+	0%, 100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+}
+.fadeInOut {
+	animation: fadeInOut 4s ease-in-out infinite;
+}
+// Fade In Out - End
+
+// Gradient Change Animation - Start
+@keyframes gradientChange {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.gradientChange {
+	animation: gradientChange 8s ease infinite;
+}
+
+.section_shadow_top {
+	z-index: 1;
+	position: relative;
+	&:before {
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+		content: '';
+		height: 125px;
+		opacity: 0.40;
+		position: absolute;
+		filter: blur(44px);
+		border-radius: 50px;
+		background-size: 400% 400%;
+		animation: gradientChange 8s ease infinite;
+		background-image: linear-gradient(45deg, var(--bs-primary), var(--bs-secondary));
+	}
+}
+// Gradient Change Animation - End
+
+// Animation Spin - Start
+@keyframes animationSpin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+.animationSpin {
+	animation: spin 5000ms linear infinite;
+}
+// Animation Spin - End
+
+// Animation Ripple - Start
+@keyframes ripple {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.75);
+	}
+}
+// Animation Ripple - End
+
+// Animation Flip - Start
+@keyframes coinFlip {
+	0% {
+		transform: rotateY(-180deg);
+	}
+	80% {
+		transform: rotateY(180deg);
+	}
+	100% {
+		transform: rotateY(180deg);
+	}
+}
+// Animation Flip - End
+
+// Animation Bell Ring - Start
+@keyframes bellRing {
+	0% {
+		transform:rotate(0)scale(1)skew(1deg)
+	}
+	10% {
+		transform:rotate(-15deg)scale(1)skew(1deg)
+	}
+	20% {
+		transform:rotate(30deg)scale(1)skew(1deg)
+	}
+	30% {
+		transform:rotate(-15deg)scale(1)skew(1deg)
+	}
+	40% {
+		transform:rotate(30deg)scale(1)skew(1deg)
+	}
+	100%,
+	50% {
+		transform:rotate(0)scale(1)skew(1deg)
+	}
+}
+
+.bellRing {
+	transform-origin: top;
+	animation: ring 1.8s ease-out infinite;
+}
+// Animation Bell Ring - End
+
+// Animation Small Zoom In Out - Start
+@keyframes smallZoomInOut {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.04);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+.smallZoomInOut {
+	animation: smallZoomInOut 1s infinite ease-in-out;
+}
+// Animation Small Zoom In Out - End
+
+/* 2.01 - CSS Animations - End
+================================================== */

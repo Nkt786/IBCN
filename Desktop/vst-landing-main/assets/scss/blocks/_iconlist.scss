@@ -1,0 +1,47 @@
+/* 2.10 - Iconlist - Start
+================================================== */
+.iconlist_block {
+  &.unordered_list_block {
+    gap: 20px;
+    >li {
+      gap: 12px;
+      display: flex;
+      align-items: flex-start;
+      >* {
+        display: inline-flex;
+      }
+    }
+  }
+  &.unordered_list {
+    gap: 26px;
+  }
+
+  .iconlist_icon {
+    width: 22px;
+    flex: 0 0 auto;
+    margin: 4px 0 0;
+    .fa-circle {
+      font-size: 5px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .iconlist_label {
+    gap: 6px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    flex-direction: column;
+    color: var(--bs-heading-color);
+    font-family: var(--bs-heading-font-family);
+  }
+  .iconlist_info {
+    font-weight: 400;
+    font-size: var(--bs-body-font-size);
+    line-height: var(--bs-body-line-height);
+    font-family: var(--bs-body-font-family);
+  }
+}
+/* 2.10 - Iconlist - End
+================================================== */

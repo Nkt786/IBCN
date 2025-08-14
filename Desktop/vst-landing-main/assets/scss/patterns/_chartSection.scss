@@ -1,0 +1,86 @@
+/* 4.05 - Chart Section - Start
+================================================== */
+
+// ICO Feature Section Chart - Start
+.ico_feature_section {
+	[class*="shape_shadow_"] {
+		width: 252px;
+		filter: blur(100px);
+	}
+	.shape_shadow_1 {
+		top: 80px;
+		left: -120px;
+	}
+	.shape_shadow_2 {
+		top: 30%;
+		right: -140px;
+	}
+}
+
+.ico_investment_value {
+	gap: 40px 30px;
+	margin-bottom: 90px;
+	>li {
+		flex-direction: column;
+	}
+	.heading_text {
+		font-size: 20px;
+		line-height: 28px;
+		margin-bottom: 13px;
+		letter-spacing: -0.4px;
+	}
+	.investment_value {
+		gap: 4px;
+		font-size: 18px;
+		font-weight: 500;
+		padding: 1px 18px;
+		line-height: 28px;
+		border-radius: 4px;
+		align-items: center;
+		display: inline-flex;
+		background-color: var(--bs-dark);
+		border: 1px solid var(--bs-border-color);
+	}
+}
+
+.ico_coin_purchase_price {
+	margin-bottom: 70px;
+	.purchase_price_rate {
+		z-index: 1;
+		font-size: 18px;
+		font-weight: 500;
+		position: relative;
+		strong {
+			font-weight: 700;
+		}
+	}
+	.chart_image {
+		margin: -50px 0 -16px;
+	}
+	.live_values {
+		display: flex;
+		font-size: 16px;
+		line-height: 28px;
+		color: var(--bs-white);
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+}
+
+.ico_calculation_range {
+	.live_values {
+		display: flex;
+		font-size: 16px;
+		line-height: 28px;
+		color: var(--bs-white);
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	.range_image {
+		margin: -16px 0;
+	}
+}
+// ICO Feature Section Chart - End
+
+/* 4.05 - Chart Section - End
+================================================== */

@@ -1,0 +1,97 @@
+/* 4.04 - Table Section - Start
+================================================== */
+
+// ICO Problem Solution Table - Start
+.ico_problem_solution_table {
+	position: relative;
+	&:before {
+		content: '';
+		z-index: -2;
+		opacity: 0.24;
+		position: absolute;
+		filter: blur(22px);
+		inset: 20px 0 -8px 0;
+		background: linear-gradient(145deg, #FC6500, #7064E9, #FC6500);
+	}
+
+	.column_wrapper {
+		z-index: 1;
+		overflow: hidden;
+		position: relative;
+		border-radius: 20px;
+		background-color: var(--bs-light);
+		border: 1px solid var(--bs-border-color);
+		&:before {
+			left: 50%;
+			top: -200px;
+			z-index: -1;
+			content: '';
+			opacity: 0.4;
+			width: 400px;
+			height: 400px;
+			position: absolute;
+			filter: blur(30px);
+			transform: translateX(-50%);
+			background-image: radial-gradient(rgba(var(--bs-border-color-translucent), 0.7), var(--bs-light));
+		}
+		&:after {
+			left: 0;
+			right: 0;
+			bottom: -40px;
+			content: '';
+			z-index: -1;
+			height: 40px;
+			filter: blur(45px);
+			position: absolute;
+			background-image: linear-gradient(45deg, #FC6500, #7064E9);
+		}
+		>* {
+			padding: 50px;
+			&:not(:last-child) {
+				border-style: solid;
+				border-width: 0 1px 0 0;
+				border-color: var(--bs-border-color);
+			}
+		}
+	}
+
+	.heading_text {
+		gap: 20px;
+		display: flex;
+		line-height: 1;
+		font-size: 32px;
+		margin-bottom: 43px;
+		align-items: center;
+		.icon {
+			width: 70px;
+			height: 70px;
+			flex: 0 0 auto;
+			border-radius: 100%;
+			align-items: center;
+			display: inline-flex;
+			justify-content: center;
+			background-color: var(--bs-dark);
+			border: 1px solid var(--bs-border-color);
+			img {
+				max-height: 36px;
+			}
+		}
+		.text {}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.ico_problem_solution_table {
+		.column_wrapper {
+			display: flex;
+			>* {
+				width: 50%;
+				flex: 0 0 auto;
+			}
+		}
+	}
+}
+// ICO Problem Solution Table - End
+
+/* 4.04 - Table Section - End
+================================================== */

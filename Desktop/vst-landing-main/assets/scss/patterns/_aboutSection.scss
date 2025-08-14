@@ -1,0 +1,366 @@
+/* 4.03 - About Section - Start
+================================================== */
+
+// ICO About Section - Start
+.ico_about_section {
+	[class*="shape_shadow_"] {
+		width: 252px;
+		filter: blur(100px);
+	}
+	.shape_shadow_1 {
+		top: 40%;
+		left: -80px;
+	}
+	.shape_shadow_2 {
+		top: 14%;
+		right: -140px;
+	}
+}
+.about_ico_block {
+	padding-left: 60px;
+	>li {
+		position: relative;
+		padding-bottom: 40px;
+		border-bottom: 1px solid rgba(var(--bs-border-color-translucent), 0.31);
+		&:not(:last-child) {
+			margin-bottom: 40px;
+		}
+		&:before {
+			top: -12px;
+			left: -60px;
+			line-height: 1;
+			font-size: 42px;
+			content: '\f192';
+			font-weight: 400;
+			position: absolute;
+			font-family: 'Font Awesome 5 Pro';
+			background: linear-gradient(0deg, #4E47A6, #101122);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		&:after {
+			top: 30px;
+			left: -42px;
+			width: 5px;
+			content: '';
+			bottom: -30px;
+			position: absolute;
+			background: linear-gradient(0deg, #101122, #4E47A6);
+		}
+	}
+
+	.title_text {
+		line-height: 1;
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+.ico_about_image {
+	position: relative;
+	.ripple_shape {
+		svg path {
+			transition: var(--bs-transition);
+			animation: fadeInOut 3s ease-in-out infinite;
+			&:nth-child(1) {
+				animation-delay: 0.8s;
+			}
+			&:nth-child(2) {
+				animation-delay: 0.6s;
+			}
+			&:nth-child(3) {
+				animation-delay: 0.4;
+			}
+			&:nth-child(4) {
+				animation-delay: 0.2s;
+			}
+		}
+	}
+	.coin_image {
+		left: 0;
+		right: 0;
+		bottom: 12px;
+		z-index: 1;
+		position: absolute;
+		img {
+			animation: upDownMover 4s ease-in-out infinite;
+		}
+	}
+}
+// ICO About Section - End
+
+// ICO White Paper Section - Start
+.whitepaper_content {
+	overflow: hidden;
+	border-radius: 20px;
+	background-color: var(--bs-dark);
+	border: 1px solid var(--bs-border-color);
+}
+.whitepaper_info_wrap {
+	[class*="info_wrap_"] {
+		padding: 40px 130px 40px 40px;
+		&:not(:last-child) {
+			border-bottom: 1px solid var(--bs-border-color);
+		}
+	}
+	.heading_text {
+		line-height: 1;
+		font-size: 24px;
+		margin-bottom: 16px;
+	}
+	p {
+		margin-bottom: 32px;
+	}
+	.iconlist_block {
+		gap: 14px;
+		margin-bottom: 43px;
+		.iconlist_label {
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 26px;
+		}
+	}
+}
+.whitepaper_image_wrap {
+	z-index: 1;
+	height: 740px;
+	display: flex;
+	position: relative;
+	align-items: center;
+	border-style: solid;
+	background-size: cover;
+	justify-content: center;
+	border-width: 0 1px 0 0;
+	background-repeat: no-repeat;
+	background-color: var(--bs-dark);
+	background-position: center center;
+	border-color: var(--bs-border-color);
+	&:before {
+		inset: 0;
+		z-index: -1;
+		content: '';
+		opacity: 0.70;
+		position: absolute;
+		background-blend-mode: lighten;
+		background: linear-gradient(0deg, #070710, #231740, #35225F);
+	}
+	.image_block {
+		z-index: 1;
+		max-width: 325px;
+		position: relative;
+		display: inline-block;
+		animation: upDownMover 3s ease-in-out infinite;
+		&:before {
+			left: 50%;
+			z-index: -1;
+			content: '';
+			width: 561px;
+			height: 110px;
+			bottom: -30px;
+			opacity: 0.90;
+			filter: blur(45px);
+			position: absolute;
+			border-radius: 100%;
+			transform: translateX(-50%);
+			background: linear-gradient(0deg, #FB3AD4, #5A19AB, #010314);
+		}
+	}
+}
+// ICO White Paper Section - End
+
+// Meme About Section - Start
+.meme_video_popup {
+	display: flex;
+	padding: 20px;
+	margin: auto;
+	max-width: 400px;
+	position: relative;
+	border-radius: 24px;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--bs-dark);
+	border: 5px solid var(--bs-primary);
+	&:before {
+		top: 100%;
+		content: '';
+		width: 60px;
+		height: 50px;
+		right: 100px;
+		position: absolute;
+		background-color: var(--bs-primary);
+		clip-path: polygon(0 0, 100% 0%, 100% 100%);
+	}
+	.title_text {
+		font-size: 30px;
+		line-height: 1.1;
+	}
+}
+
+.meme_popup_video_area {
+	.image_block {
+		float: right;
+		max-width: 665px;
+		margin: 80px -100px 0 0;
+	}
+}
+
+.meme_introducing_image {
+	z-index: 1;
+	position: relative;
+	.animate_line_image {
+		top: -32px;
+		right: 56px;
+		z-index: -1;
+		position: absolute;
+		animation: smallZoomInOut 2s infinite ease-in-out;
+	}
+}
+// Meme About Section - End
+
+// Meme Process Section - Start
+.meme_process_section {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.meme_process_heading {
+	border-radius: 20px;
+	margin-bottom: 30px;
+	background-size: cover;
+	padding: 55px 70px 62px;
+	background-repeat: no-repeat;
+	background-color: var(--bs-dark);
+	border: 1px solid var(--bs-primary);
+	background-position: center bottom;
+	.cartoon_image {
+		z-index: 1;
+		max-width: 344px;
+		position: relative;
+		.animate_line_image {
+			top: 25px;
+			left: 85px;
+			z-index: -1;
+			position: absolute;
+			animation: smallZoomInOut 2s infinite ease-in-out;
+		}
+	}
+}
+
+.meme_progress_block {
+	overflow: hidden;
+	position: relative;
+	border-radius: 20px;
+	padding: 36px 50px 60px 30px;
+	background-color: var(--bs-dark);
+	border: 1px solid var(--bs-primary);
+	&:before {
+		content: '';
+		right: -46px;
+		bottom: -100px;
+		width: 130px;
+		height: 170px;
+		position: absolute;
+		border-radius: 10px;
+		transform: rotate(10deg);
+		border: 1px solid var(--bs-primary);
+	}
+	.block_title {
+		gap: 14px;
+		display: flex;
+		font-size: 18px;
+		line-height: 36px;
+		align-items: center;
+		margin-bottom: 16px;
+		.icon {
+			width: 25px;
+			flex: 0 0 auto;
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.serial_number {
+		z-index: 1;
+		right: 10px;
+		bottom: 10px;
+		width: 46px;
+		height: 46px;
+		display: flex;
+		position: absolute;
+		align-items: center;
+		justify-content: center;
+	}
+	.crown {
+		top: 0;
+		left: 50%;
+		max-width: 16px;
+		position: absolute;
+		transform: translateX(-50%);
+	}
+	.number {
+		margin-top: 2px;
+		color: var(--bs-dark);
+		font-family: var(--bs-heading-font-family);
+	}
+	.spin_bg {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -2;
+		position: absolute;
+		img {
+			animation: spin 8s linear infinite;
+		}
+	}
+}
+// Meme Process Section - End
+
+// Pepe About Section - Start
+.pepecoin_about_section {
+	.shape_tree {
+		bottom: 0;
+		left: -604px;
+		max-width: 1192px;
+	}
+	.shape_cloud {
+		top: 22%;
+		left: 15%;
+		max-width: 270px;
+		img {
+			animation: upDownMover 3s ease-in-out infinite;
+		}
+	}
+}
+
+.pepecoin_about_content {
+	.pepecoin_heading_block {
+		top: 30%;
+		left: 50%;
+		width: 670px;
+		position: absolute;
+		transform: translateX(-50%);
+	}
+	.shape_dragonfly {
+		top: 22px;
+		left: 30px;
+		max-width: 152px;
+		position: absolute;
+	}
+	.shape_wood_1 {
+		right: -120px;
+		bottom: -30px;
+		max-width: 330px;
+		position: absolute;
+	}
+	.shape_wood_2 {
+		left: -280px;
+		bottom: -34px;
+		max-width: 440px;
+		position: absolute;
+	}
+}
+// Pepe About Section - End
+
+/* 4.03 - About Section - End
+================================================== */

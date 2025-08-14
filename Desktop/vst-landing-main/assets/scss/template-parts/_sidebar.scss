@@ -1,0 +1,19 @@
+/* 3.05 - Sidebar - Start
+================================================== */
+.sidebar {
+	>* {
+		&:not(:last-child) {
+			margin-bottom: 70px;
+		}
+	}
+}
+
+.sidebar_title {
+	line-height: 1;
+	font-size: 18px;
+	margin-bottom: 27px;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
+/* 3.05 - Sidebar - End
+================================================== */

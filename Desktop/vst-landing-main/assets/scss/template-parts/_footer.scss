@@ -1,0 +1,177 @@
+/* 3.02 - Site Footer - Start
+================================================== */
+
+// ICO Site Footer - Start
+.ico_site_footer {
+	padding: 146px 0 0;
+	.shape_top {
+		left: 0;
+		right: 0;
+		top: -120px;
+		img {
+			width: 100%;
+		}
+	}
+
+	.pagelist_block {
+		margin-bottom: 58px;
+	}
+
+	.middle_area {
+		margin: 0;
+		display: flex;
+		border-style: solid;
+		border-width: 1px 0;
+		align-items: stretch;
+		justify-content: center;
+		border-color: var(--bs-border-color);
+		>* {
+			margin: 0;
+			display: flex;
+			padding: 50px 40px;
+			text-align: center;
+			align-items: center;
+			flex-direction: column;
+			&:not(:first-child, :last-child) {
+				width: 40%;
+				border-width: 0 1px;
+				border-style: solid;
+				border-color: var(--bs-border-color);
+			}
+			&:first-child,
+			&:last-child {
+				width: 30%;
+			}
+		}
+	}
+
+	.footer_title {
+		line-height: 1;
+		font-size: 14px;
+		margin-bottom: 30px;
+	}
+
+	.footer_bottom {
+		padding: 37px 0;
+	}
+	.copyright_text {
+		--bs-secondary: #7064E9;
+		--bs-secondary-rgb: 112, 100, 233;
+	}
+}
+// ICO Site Footer - End
+
+// Meme Site Footer - Start
+.meme_site_footer {
+	margin-top: -274px;
+	padding: 450px 0 30px;
+	background-image: linear-gradient(0deg, var(--bs-primary), transparent);
+	.cartoon_shape_1 {
+		left: 0;
+		right: 0;
+		bottom: 0;
+		text-align: center;
+		img {
+			max-width: 1592px;
+		}
+	}
+	.cartoon_shape_2 {
+		top: 55%;
+		left: 40px;
+		max-width: 106px;
+		img {
+			animation: upDownMover 3.5s ease-in-out infinite;
+		}
+	}
+	.cartoon_shape_3 {
+		top: 58%;
+		right: 40px;
+		max-width: 151px;
+		img {
+			animation: upDownMover 3.5s ease-in-out infinite 0.8s;
+		}
+	}
+
+	.footer_heading {
+		line-height: 1;
+		font-size: 54px;
+		margin-bottom: 63px;
+	}
+
+	.btns_group {
+		margin-bottom: 470px;
+	}
+
+	.pagelist_block a {
+		font-size: 20px;
+	}
+}
+// Meme Site Footer - End
+
+// Pepe Site Footer - Start
+.pepecoin_site_footer {
+	padding: 380px 0 0;
+	position: relative;
+	background-image: linear-gradient(0deg, var(--bs-white), #EFF8CD);
+	.shape_sign_board {
+		left: 0;
+		right: 0;
+		bottom: 94px;
+		position: absolute;
+		text-align: center;
+		img {
+			max-width: 1240px;
+			display: inline-block;
+		}
+	}
+	.pepecoin_heading_block {
+		margin-bottom: 150px;
+	}
+	.shape_ground {
+		z-index: 1;
+		position: relative;
+		margin-top: -150px;
+		img {
+			width: 100%;
+		}
+	}
+	.shape_dragonfly {
+		top: 310px;
+		left: 150px;
+		max-width: 120px;
+		position: absolute;
+		img {
+			animation: upDownMover 3s ease-in-out infinite;
+		}
+	}
+	.shape_cloud {
+		top: 170px;
+		right: 70px;
+		max-width: 160px;
+		position: absolute;
+		img {
+			animation: upDownMover 3s ease-in-out infinite;
+		}
+	}
+	.shape_tree {
+		bottom: 24px;
+		right: -590px;
+		max-width: 1130px;
+		position: absolute;
+	}
+	.copyright_text {
+		line-height: 1;
+		font-size: 16px;
+		font-weight: 700;
+	}
+	.footer_bottom {
+		z-index: 2;
+		position: relative;
+		padding: 18px 0 16px;
+		background-color: #0E2F18;
+	}
+}
+// Pepe Site Footer - End
+
+/* 3.02 - Site Footer - End
+================================================== */

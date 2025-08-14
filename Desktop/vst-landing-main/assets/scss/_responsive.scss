@@ -1,0 +1,1461 @@
+/* 
+Responsive For Mobile & Tablet Devices
+================================================== 
+* Project Name   :  Coinpay - Crypto Currency Site Template.
+* File           :  CSS Base
+* Version        :  1.0.0
+* Author         :  XpressBuddy (https://themeforest.net/user/xpressbuddy/portfolio)
+* Developer			 :	webrok (https://www.fiverr.com/webrok?up_rollout=true)
+*	CSS code for responsive layout To make responsive
+================================================== 
+*/
+
+/* Media Screen 1440px - Start
+================================================== */
+@media (max-width: 1440px) {
+	.ico_site_footer {
+		padding: 80px 0 0;
+	}
+	.ico_site_footer .shape_top {
+		top: -90px;
+	}
+	.section_shadow_top:before {
+		height: 60px;
+	}
+	.ico_hero_section .shape_globe {
+		left: 40px;
+		max-width: 100px;
+	}
+	.ico_hero_section .shape_coin {
+		right: 40px;
+		max-width: 150px;
+	}
+	.memecoin_hero_section [class*=shape_cartoon_] {
+		max-width: 150px;
+	}
+	.memecoin_hero_section .shape_cartoon_1 {
+		left: 6%;
+	}
+	.memecoin_hero_section .shape_cartoon_2 {
+		right: 6%;
+	}
+	.memecoin_hero_section .shape_chain_2 {
+		bottom: -90px;
+	}
+	.memecoin_hero_section .shape_chain_1 {
+		top: -100px;
+	}
+	.pepecoin_site_footer .shape_tree {
+		max-width: 870px;
+	}
+	.pepecoin_roadmap_section .shape_tree_wood {
+		max-width: 350px;
+	}
+	.pepecoin_roadmap_section .pepe_coin_image {
+		right: 96px;
+		bottom: 120px;
+		max-width: 180px;
+	}
+	.pepecoin_roadmap_section .shape_cartoon_1 {
+		left: 18%;
+		bottom: 0px;
+		max-width: 220px;
+	}
+	.pepecoin_site_footer .shape_sign_board {
+		bottom: 26px;
+	}
+	.pepecoin_roadmap_section .shape_tree {
+		left: -750px;
+		max-width: 1200px;
+	}
+}
+/* Media Screen 1440px - End
+================================================== */
+
+/* Media Screen 1360px - Start
+================================================== */
+@media (max-width: 1360px) {
+	.meme_site_footer .pagelist_block a {
+		font-size: 18px;
+	}
+	.pagelist_block.unordered_list {
+		gap: 16px 40px;
+	}
+	.pepecoin_about_content .shape_wood_2 {
+		left: -110px;
+		bottom: -14px;
+		max-width: 260px;
+	}
+	.pepecoin_about_content .shape_wood_1 {
+		right: -62px;
+		bottom: -14px;
+		max-width: 250px;
+	}
+	.pepecoin_about_section .shape_cloud {
+		top: 12%;
+		left: 8%;
+		max-width: 190px;
+	}
+	.pepecoin_hero_section .shape_leaf_top {
+		top: -40px;
+	}
+}
+/* Media Screen 1360px - End
+================================================== */
+
+/* Media Screen 1199px - Start
+================================================== */
+@media (max-width: 1199px) {
+	.whitepaper_info_wrap [class*=info_wrap_] {
+		padding: 40px;
+	}
+	.ico_site_footer .middle_area > * {
+		padding: 40px 30px;
+	}
+	.ico_site_footer .shape_top {
+		top: -70px;
+	}
+	.section_shadow_top:before {
+		height: 40px;
+	}
+	.pagelist_block.unordered_list {
+		gap: 14px 40px;
+	}
+	.ico_iconbox_block .iconbox_description {
+		max-width: 100%;
+	}
+	.ico_about_image .coin_image img {
+		max-width: 400px;
+	}
+	.memecoin_hero_section .hero_title {
+		font-size: 66px;
+		line-height: 76px;
+		margin-bottom: 18px;
+	}
+	.memecoin_hero_section .hero_description {
+		margin: 0 auto 50px;
+	}
+	.memecoin_hero_section .hero_title .shape_image {
+		max-width: 60px;
+	}
+	.memecoin_heading_block .heading_text {
+		font-size: 48px;
+		line-height: 58px;
+	}
+	.meme_progress_block .block_title {
+		line-height: 24px;
+	}
+	.benefits_features .benefits_feature_item_1:after {
+		right: -40px;
+		bottom: -65px;
+	}
+	.benefits_features .benefits_feature_item_3:after {
+		left: -40px;
+		bottom: -65px;
+	}
+	.benefits_features .benefits_feature_item_2:after {
+		right: -90px;
+	}
+	.benefits_features .benefits_feature_item_4:after {
+		left: -90px;
+	}
+	.meme_accordion .accordion-item {
+		padding: 40px;
+	}
+	.meme_accordion .accordion-button {
+		gap: 20px;
+	}
+	.meme_site_footer .cartoon_shape_1 img {
+		max-width: 100%;
+	}
+	.meme_site_footer .cartoon_shape_3 {
+		top: 65%;
+		max-width: 210px;
+	}
+	.meme_site_footer .cartoon_shape_2 {
+		top: 62%;
+	}
+	.meme_site_footer .btns_group {
+		margin-bottom: 300px;
+	}
+	.memecoin_hero_section [class*=shape_cartoon_] {
+		max-width: 100px;
+	}
+	.memecoin_hero_section .shape_cartoon_1 {
+		left: 2%;
+	}
+	.memecoin_hero_section .shape_cartoon_2 {
+		right: 2%;
+	}
+	.memecoin_hero_section .shape_chain_2 {
+		left: -40px;
+		right: -40px;
+		bottom: -44px;
+	}
+	.memecoin_hero_section .shape_chain_1 {
+		top: -70px;
+		left: -30px;
+		right: -30px;
+	}
+	.memecoin_hero_section {
+		padding: 190px 0 100px;
+	}
+	.content_ticker_carousel .swiper-slide {
+		font-size: 130px;
+		margin: -70px 0 -50px;
+	}
+	.content_ticker_wrapper .shape_heart {
+		max-width: 160px;
+	}
+	.benefits_features [class*=benefits_feature_item_] {
+		z-index: 1;
+		top: unset;
+		left: unset;
+		right: unset;
+		width: 200px;
+		bottom: unset;
+		position: relative;
+		&:after {
+			display: none;
+		}
+	}
+	.benefits_features {
+		gap: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	.benefits_features .benefits_circle {
+		padding: 0;
+		margin: auto;
+		width: 200px;
+		height: 200px;
+		align-items: center;
+		justify-content: center;
+	}
+	.benefits_features .benefits_circle .percent {
+		font-size: 38px;
+	}
+	.benefits_features .benefits_circle .percent_title {
+		font-size: 16px;
+	}
+	.benefits_features .benefits_circle:before {
+		inset: -30px;
+	}
+	.benefits_features .benefits_circle:after {
+		inset: -70px;
+	}
+	.meme_tokenomics_benefits:before {
+		display: none;
+	}
+	.meme_tokenomics_benefits {
+		padding: 30px 80px;
+	}
+	.pepecoin_hero_section .hero_title {
+		font-size: 72px;
+		margin: 0 0 18px 0;
+	}
+	.pepecoin_hero_section .hero_description {
+		font-size: 22px;
+		margin: 0 0 40px 0;
+	}
+	.pepecoin_hero_image .pepe_coin_image img {
+		max-width: 350px;
+	}
+	.pepecoin_about_section .shape_tree {
+		left: -520px;
+		max-width: 1000px;
+	}
+	.pepecoin_heading_block .heading_text {
+		font-size: 60px;
+	}
+	.pepecoin_feature_section .shape_frog {
+		bottom: 0;
+		left: 60px;
+		max-width: 150px;
+	}
+	.pepecoin_feature_section .shape_tree img {
+		max-width: 700px;
+		margin-right: -340px;
+	}
+	.pepecoin_feature_section .shape_stone {
+		left: -25px;
+		right: -25px;
+		bottom: -50px;
+	}
+	.pepecoin_token_supply p {
+		font-size: 22px;
+		line-height: 30px;
+	}
+	.pepecoin_token_supply [class*=shape_tree_wood_] {
+		bottom: -88px;
+		max-width: 250px;
+	}
+	.pepecoin_token_supply .shape_tree_wood_1 {
+		left: -15px;
+	}
+	.pepecoin_token_supply .shape_tree_wood_2 {
+		left: 26%;
+	}
+	.pepecoin_token_supply .shape_tree_wood_3 {
+		right: 25%;
+	}
+	.pepecoin_token_supply .shape_tree_wood_4 {
+		right: -30px;
+	}
+	.pepecoin_roadmap_list {
+		top: 76px;
+		gap: 110px;
+	}
+	.pepecoin_roadmap_list > li {
+		font-size: 40px;
+	}
+	.pepecoin_roadmap_section .shape_stone {
+		left: -25px;
+		right: -25px;
+		bottom: -50px;
+	}
+	.pepecoin_roadmap_section .shape_cartoon_1 {
+		max-width: 184px;
+	}
+	.pepecoin_roadmap_section .shape_tree_wood {
+		right: -38px;
+		max-width: 260px;
+	}
+	.pepecoin_roadmap_section .pepe_coin_image {
+		right: 34px;
+		bottom: 92px;
+		max-width: 130px;
+	}
+	.pepecoin_roadmap_section .shape_tree {
+		left: -530px;
+		max-width: 1000px;
+	}
+	.pepecoin_site_footer .shape_sign_board img {
+		max-width: 1120px;
+	}
+	.pepecoin_site_footer {
+		padding: 330px 0 0;
+	}
+	.pepecoin_site_footer .shape_cloud {
+		top: 110px;
+		right: 20px;
+		max-width: 120px;
+	}
+	.pepecoin_site_footer .shape_dragonfly {
+		top: 80px;
+		left: 15px;
+		max-width: 90px;
+	}
+	.page_header {
+		padding: 170px 0 260px;
+	}
+	.meme_introducing_image .animate_line_image {
+		top: -26px;
+		right: 48px;
+		max-width: 150px;
+		display: inline-block;
+	}
+	.meme_process_heading .cartoon_image .animate_line_image {
+		left: 80px;
+		max-width: 234px;
+	}
+	.meme_tokenomics_section .casino_image .coinpay_animate {
+		max-width: 150px;
+	}
+}
+/* Media Screen 1199px - End
+================================================== */
+
+/* Media Screen 1024px - Start
+================================================== */
+@media (max-width: 1024px) {
+	.ico_hero_section .shape_globe {
+		left: 30px;
+		max-width: 60px;
+	}
+	.ico_hero_section .shape_coin {
+		right: 20px;
+		max-width: 90px;
+	}
+	.ico_about_image .coin_image img {
+		max-width: 350px;
+	}
+	.ico_coin_purchase_price .chart_image {
+		margin: -20px 0 -16px;
+	}
+	.ico_team_block .team_avatar .avatar_wrap {
+		width: 120px;
+		height: 120px;
+	}
+	.ico_team_block .front_side_content,
+	.ico_team_block .back_side_content {
+		padding: 40px 20px;
+	}
+	.ico_team_block .team_member_name {
+		font-size: 20px;
+		margin-bottom: 8px;
+	}
+	.pepecoin_hero_section .shape_leaf_bottom {
+		left: -90px;
+		bottom: -40px;
+	}
+	.pepecoin_hero_section .hero_title {
+		font-size: 60px;
+		margin: 0 0 16px 0;
+	}
+	.pepecoin_hero_section .hero_description {
+		font-size: 20px;
+		margin: 0 0 34px 0;
+	}
+	.pepecoin_btn {
+		font-size: 20px;
+	}
+	.header_pepecoin .main_menu_list > li > .nav-link {
+		font-size: 16px;
+	}
+	.pepecoin_hero_section .shape_cloud {
+		top: 140px;
+		left: -60px;
+		max-width: 140px;
+	}
+	.pepecoin_hero_image .pepe_coin_image img {
+		max-width: 290px;
+	}
+	.pepecoin_heading_block .heading_text {
+		font-size: 48px;
+	}
+	.pepecoin_heading_block .heading_text:has(.shape_dot) .shape_dot {
+		max-width: 36px;
+		margin: -6px 0 0;
+	}
+	.pepecoin_heading_block .heading_description {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.pepecoin_feature_block p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.pepecoin_feature_block .feature_title {
+		font-size: 26px;
+	}
+	.pepecoin_feature_block {
+		padding: 90px 70px 70px;
+	}
+	.pepecoin_feature_block .feature_serial_number {
+		width: 160px;
+		height: 90px;
+		font-size: 36px;
+	}
+	.pepecoin_about_content .pepecoin_heading_block {
+		width: 570px;
+	}
+	.pepecoin_token_supply {
+		padding: 70px 80px 130px;
+	}
+	.pepecoin_token_supply .heading_text,
+	.pepecoin_token_supply .token_supply_value {
+		font-size: 40px;
+	}
+	.pepecoin_token_supply p {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.pepecoin_token_supply [class*=shape_tree_wood_] {
+		bottom: -70px;
+		max-width: 200px;
+	}
+	.pepecoin_token_supply .shape_tree_wood_1 {
+		left: -10px;
+	}
+	.pepecoin_token_supply .shape_tree_wood_2 {
+		left: 27%;
+	}
+	.pepecoin_token_supply .shape_tree_wood_3 {
+		right: 26%;
+	}
+	.pepecoin_token_supply .shape_tree_wood_4 {
+		right: -20px;
+	}
+	.pepecoin_roadmap_list > li {
+		font-size: 30px;
+	}
+	.pepecoin_roadmap_list {
+		top: 70px;
+		gap: 96px;
+	}
+	.pepecoin_roadmap_section .shape_cartoon_1 {
+		left: 17%;
+		max-width: 160px;
+	}
+	.social_block.style_3 a {
+		width: 46px;
+		height: 46px;
+		font-size: 18px;
+	}
+	.social_block.style_3 a svg {
+		width: 18px;
+	}
+	.pepecoin_site_footer .shape_tree {
+		display: none;
+	}
+	.pepecoin_site_footer .shape_sign_board {
+		display: none;
+	}
+	.pepecoin_site_footer {
+		padding: 200px 0 0;
+	}
+	.pepecoin_site_footer .pepecoin_heading_block {
+		margin-bottom: 50px;
+	}
+	.pepecoin_site_footer .shape_ground {
+		margin-top: -40px;
+	}
+	[class*=_details_section] .details_title {
+		font-size: 36px;
+		line-height: 46px;
+		margin: 22px 0 18px;
+	}
+	.comment_form,
+	.subscribe_box {
+		padding: 41px 50px 50px;
+	}
+	.subscribe_box .bell_icon {
+		top: 50px;
+		right: 50px;
+	}
+	.content_ticker_wrapper .shape_heart .coinpay_animate {
+		margin-top: -4px;
+	}
+	.meme_introducing_image .animate_line_image {
+		top: -23px;
+		right: 44px;
+		max-width: 126px;
+	}
+	.meme_process_heading .cartoon_image .animate_line_image {
+		left: 70px;
+		max-width: 186px;
+	}
+	.meme_tokenomics_section .casino_image .coinpay_animate {
+		max-width: 130px;
+	}
+}
+/* Media Screen 1024px - End
+================================================== */
+
+/* Media Screen 991px - Start
+================================================== */
+@media (max-width: 991px) {
+	.container {
+		max-width: 730px;
+	}
+	.ico_hero_section .ico_countdown_progress_box .countdown_timer_block {
+		padding: 30px 20px;
+		margin: 10px 0 20px;
+		border-radius: 10px;
+		background-image: none !important;
+		background-color: var(--bs-light);
+		border: 1px solid var(--bs-border-color);
+	}
+	.ico_countdown_progress_box .countdown_timer_block {
+		gap: 20px 78px;
+	}
+	.ico_hero_section {
+		padding: 150px 0 0;
+		margin-bottom: 40px;
+	}
+	.ico_hero_section .hero_title {
+		font-size: 54px;
+		line-height: 64px;
+	}
+	.ico_hero_section .ico_countdown_progress_box {
+		margin: 60px auto 16px;
+	}
+	.ico_partner_logo .logo_wrap {
+		height: 90px;
+		padding: 0 30px;
+	}
+	.ico_about_image {
+		margin-top: 60px;
+	}
+	.ico_about_image .coin_image img {
+		max-width: 100%;
+	}
+	.ico_problem_solution_table .column_wrapper > *:not(:last-child) {
+		border-width: 0 0 1px 0;
+	}
+	.icon_coins_image {
+		margin: 40px auto auto;
+	}
+	.whitepaper_image_wrap {
+		height: auto;
+		padding: 80px 30px;
+		border-width: 0 0 1px 0;
+	}
+	.whitepaper_info_wrap [class*=info_wrap_] {
+		padding: 30px;
+	}
+	.ico_site_footer .middle_area > *:first-child,
+	.ico_site_footer .middle_area > *:last-child {
+		width: 100%;
+	}
+	.ico_site_footer .middle_area > *:not(:first-child, :last-child) {
+		width: 100%;
+		border-width: 1px 0;
+	}
+	.ico_site_footer .middle_area {
+		flex-wrap: wrap;
+		border-width: 1px;
+		border-radius: 10px;
+	}
+	.ico_site_footer .middle_area > * {
+		padding: 60px 30px;
+	}
+	.row:has(.memecoin_iconbox_block) > *:not(:last-child) {
+		border-style: dashed;
+		border-color: #C0DBA6;
+		border-width: 0 0 1px 0;
+	}
+	.row:has(.memecoin_iconbox_block) {
+		border-width: 1px;
+	}
+	.row:has(.memecoin_iconbox_block) .memecoin_iconbox_block {
+		padding: 40px 20px;
+	}
+	.token_copy_board {
+		flex-wrap: wrap;
+		margin: 30px 15px 0;
+	}
+	.meme_popup_video_area .image_block {
+		float: none;
+		max-width: 100%;
+		margin: 50px auto auto;
+	}
+	.meme_site_footer .cartoon_shape_1 img {
+		max-width: 350px;
+	}
+	.meme_site_footer {
+		margin-top: -274px;
+		padding: 400px 0 120px;
+	}
+	.meme_site_footer .footer_bottom {
+		text-align: center;
+		.social_block {
+			justify-content: center;
+		}
+	}
+	.meme_site_footer .footer_heading {
+		font-size: 42px;
+		margin-bottom: 50px;
+	}
+	.meme_site_footer .pagelist_block a {
+		font-size: 16px;
+	}
+	.pagelist_block.unordered_list {
+		gap: 14px 30px;
+	}
+	.meme_site_footer .btns_group {
+		margin-bottom: 120px;
+	}
+	.meme_site_footer .cartoon_shape_3 {
+		max-width: 150px;
+	}
+	.meme_tokenomics_section .shape_arrow_right {
+		max-width: 250px;
+		margin: 40px auto;
+	}
+	.meme_tokenomics_section .casino_image {
+		margin: auto;
+		max-width: 500px;
+	}
+	.content_ticker_carousel .swiper-slide {
+		margin: -55px 0;
+		font-size: 96px;
+	}
+	.content_ticker_wrapper .shape_heart {
+		max-width: 148px;
+	}
+	.content_ticker_wrapper {
+		padding: 70px 0;
+	}
+	.meme_process_section .cartoon_image {
+		max-width: 300px;
+		margin: auto 0 auto auto;
+	}
+	.pepecoin_hero_image .pepe_coin_image img {
+		max-width: 430px;
+	}
+	.pepecoin_hero_section {
+		text-align: center;
+		.btns_group {
+			justify-content: center;
+		}
+	}
+	.pepecoin_hero_section .shape_tree,
+	.pepecoin_about_section .shape_tree {
+		display: none;
+	}
+	.pepecoin_about_section .shape_cloud {
+		max-width: 120px;
+	}
+	.pepecoin_about_content .shape_dragonfly {
+		max-width: 106px;
+	}
+	.pepecoin_about_content .shape_wood_2 {
+		left: -90px;
+		bottom: -12px;
+		max-width: 190px;
+	}
+	.pepecoin_about_content .shape_wood_1 {
+		max-width: 210px;
+	}
+	.pepecoin_feature_block {
+		padding: 90px 110px 70px;
+	}
+	.pepecoin_token_supply .image_block {
+		max-width: 220px;
+	}
+	.pepecoin_token_supply [class*=shape_tree_wood_] {
+		bottom: -44px;
+		max-width: 140px;
+	}
+	.pepecoin_roadmap_image {
+		max-width: 500px;
+		margin: auto auto 0;
+	}
+	.pepecoin_roadmap_list > li {
+		font-size: 24px;
+	}
+	.pepecoin_roadmap_list {
+		top: 62px;
+		gap: 90px;
+	}
+	.pepecoin_roadmap_section .shape_tree_wood {
+		bottom: -15px;
+	}
+	.pepecoin_roadmap_section .pepe_coin_image {
+		right: 36px;
+		bottom: 78px;
+	}
+	.pepecoin_site_footer {
+		.pepecoin_heading_block {
+			text-align: center;
+		}
+		.social_block.style_3 {
+			justify-content: center;
+		}
+	}
+	.pepecoin_feature_section .shape_stone {
+		bottom: -20px;
+	}
+	.pepecoin_roadmap_section .shape_stone {
+		bottom: -30px;
+	}
+	.pepecoin_roadmap_section .shape_cartoon_1 {
+		max-width: 120px;
+	}
+	.pepecoin_roadmap_section .shape_tree_wood {
+		bottom: -5px;
+		max-width: 190px;
+	}
+	.pepecoin_roadmap_section .pepe_coin_image {
+		right: 20px;
+		bottom: 64px;
+		max-width: 90px;
+	}
+	.pepecoin_site_footer {
+		padding: 130px 0 0;
+	}
+	.pepecoin_site_footer .shape_ground {
+		margin-top: 0;
+	}
+	.blog_carousel_block .blog_post_title {
+		font-size: 36px;
+		line-height: 42px;
+		margin: 30px 0 17px;
+	}
+	.blog_post_left_image {
+		flex-direction: column;
+	}
+	.blog_post_left_image .post_image {
+		width: 100%;
+	}
+	.contact_section .gmap_canvas {
+		margin-top: 80px;
+	}
+	.gmap_canvas iframe {
+		height: 500px;
+	}
+	.ico_roadmap_flexbox {
+		display: block;
+		.roadmap_block:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+	.roadmap_block .iconlist_block {
+		opacity: 1;
+		min-height: auto;
+	}
+	.roadmap_block .hover_shape {
+		display: none;
+	}
+	.meme_process_heading .cartoon_image .animate_line_image {
+		left: 80px;
+		max-width: 210px;
+	}
+	.meme_tokenomics_section .casino_image .coinpay_animate {
+		max-width: 158px;
+	}
+}
+/* Media Screen 991px - End
+================================================== */
+
+/* Media Screen 767px - Start
+================================================== */
+@media (max-width: 767px) {
+	.ico_problem_solution_table .column_wrapper > * {
+		padding: 40px 30px;
+	}
+	.ico_problem_solution_table .heading_text {
+		gap: 15px;
+		font-size: 26px;
+		margin-bottom: 30px;
+	}
+	.ico_problem_solution_table .heading_text .icon img {
+		max-height: 30px;
+	}
+	.ico_problem_solution_table .heading_text .icon {
+		width: 60px;
+		height: 60px;
+	}
+	.memecoin_hero_section .hero_title {
+		font-size: 60px;
+		line-height: 66px;
+	}
+	.memecoin_hero_section .hero_title .shape_image {
+		max-width: 54px;
+	}
+	.memecoin_hero_section .shape_cartoon_1 {
+		left: -50px;
+	}
+	.memecoin_hero_section .shape_cartoon_2 {
+		right: -50px;
+	}
+	.meme_process_heading {
+		padding: 40px;
+	}
+	.meme_tokenomics_benefits {
+		padding: 40px;
+	}
+	.benefits_features .benefits_circle {
+		width: 160px;
+		height: 160px;
+	}
+	.benefits_features .benefits_circle .percent {
+		font-size: 30px;
+	}
+	.benefits_features .benefits_circle .percent_title {
+		font-size: 14px;
+	}
+	.meme_site_footer .cartoon_shape_2 {
+		left: -46px;
+		max-width: 100px;
+	}
+	.meme_site_footer .cartoon_shape_3 {
+		right: -50px;
+		max-width: 140px;
+	}
+	.meme_progress {
+		width: 100%;
+	}
+	.pepecoin_roadmap_section .shape_tree {
+		left: -470px;
+		max-width: 900px;
+	}
+	.iconlist_block.unordered_list_block {
+		gap: 10px;
+	}
+	.other_post_nav {
+		gap: 30px;
+		flex-direction: column;
+	}
+	.pepecoin_feature_section .shape_tree img {
+		margin-top: -70px;
+	}
+}
+/* Media Screen 767px - End
+================================================== */
+
+/* Media Screen 575px - Start
+================================================== */
+@media (max-width: 575px) {
+	.ico_hero_section .hero_title {
+		font-size: 48px;
+		line-height: 54px;
+	}
+	.progress_range_step {
+		flex-wrap: nowrap;
+	}
+	.progress_range_step > li {
+		font-size: 14px;
+		padding: 0 10px;
+	}
+	.ico_hero_section {
+		margin-bottom: 80px;
+	}
+	.ico_heading_block .heading_text {
+		font-size: 38px;
+		line-height: 48px;
+	}
+	.rc-nav-button-prev {
+		left: 0;
+	}
+	.rc-nav-button-next {
+		right: 0;
+	}
+	[class*=rc-nav-button-] {
+		z-index: 1;
+	}
+	.section_decoration .decoration_item:has(img[src*=shape_section_divider_]) {
+		top: 40px;
+	}
+	.whitepaper_info_wrap .iconlist_block {
+		gap: 14px;
+		margin-bottom: 0;
+	}
+	.whitepaper_info_wrap .ico_creative_btn {
+		margin-top: 40px;
+	}
+	.event_card_block .event_info {
+		margin: 0;
+		width: 100%;
+		padding: 30px;
+		border-radius: 0;
+		border-width: 1px 0 0;
+	}
+	.event_card_block .event_date {
+		width: 100%;
+		height: auto;
+		border-width: 0;
+		position: sticky;
+		padding: 20px 30px;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+	.event_block_left_image {
+		flex-direction: column;
+	}
+	.event_block_left_image .event_image {
+		max-width: 100%;
+	}
+	.section_shadow_top:before {
+		height: 5px;
+	}
+	.ico_site_footer .shape_top {
+		top: -40px;
+	}
+	.ico_accordion .icon_arrow {
+		width: 70px;
+	}
+	.ico_accordion .accordion-item {
+		padding: 20px 90px 20px 30px;
+	}
+	.ico_accordion .accordion-button {
+		line-height: 26px;
+	}
+	.ico_accordion .icon_arrow svg {
+		width: 20px;
+	}
+	.ico_accordion .accordion-body {
+		padding: 20px 0 8px 0;
+	}
+	.memecoin_hero_section .hero_title {
+		font-size: 48px;
+		line-height: 58px;
+	}
+	.memecoin_hero_section .decoration_item {
+		display: none;
+	}
+	.memecoin_hero_section {
+		padding: 160px 0 100px;
+	}
+	.memecoin_heading_block .heading_text {
+		font-size: 36px;
+		line-height: 46px;
+	}
+	.memecoin_heading_block .heading_description {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.memecoin_hero_section .hero_description {
+		font-size: 18px;
+		line-height: 26px;
+		margin: 0 auto 50px;
+	}
+	.memecoin_countdown_wraper {
+		width: 100%;
+		height: auto;
+		margin-top: 30px;
+		padding: 60px 30px;
+		border-radius: 20px;
+	}
+	.memecoin_countdown_wraper .shape_circle,
+	.memecoin_countdown_wraper .shape_cartoon,
+	.memecoin_countdown_wraper .shape_cartoon_hand {
+		display: none;
+	}
+	.token_copy_board {
+		display: block;
+	}
+	.content_ticker_carousel .swiper-slide {
+		font-size: 76px;
+		margin: -44px 0;
+	}
+	.content_ticker_wrapper {
+		padding: 50px 0;
+	}
+	.meme_eliments_section {
+		padding: 0;
+	}
+	.pepecoin_hero_section .shape_cloud {
+		top: 110px;
+		left: -50px;
+		max-width: 90px;
+	}
+	.pepecoin_hero_section .shape_leaf_top {
+		top: -10px;
+	}
+	.pepecoin_hero_image .pepe_coin_image img {
+		max-width: 340px;
+	}
+	.pepecoin_about_content .pepecoin_heading_block {
+		width: 100%;
+		position: sticky;
+		transform: unset;
+	}
+	.pepecoin_about_content .shape_board_image,
+	.pepecoin_about_content .shape_dragonfly,
+	.pepecoin_about_content .shape_wood_1,
+	.pepecoin_about_content .shape_wood_2 {
+		display: none;
+	}
+	.pepecoin_feature_section .shape_tree img {
+		max-width: 500px;
+		margin-right: -260px;
+	}
+	.pepecoin_feature_section .shape_dragonfly {
+		bottom: 70px;
+		max-width: 60px;
+	}
+	.pepecoin_feature_section .shape_frog {
+		left: 30px;
+		max-width: 90px;
+	}
+	.pepecoin_token_supply [class*=shape_tree_wood_] {
+		bottom: -30px;
+		max-width: 104px;
+	}
+	.pepecoin_roadmap_section .shape_stone {
+		bottom: -16px;
+	}
+	.pepecoin_roadmap_section .shape_tree {
+		left: -390px;
+		max-width: 760px;
+	}
+	.pepecoin_hero_image .pepe_coin_image img {
+		max-width: 235px;
+	}
+	.blog_carousel_block .blog_post_title {
+		font-size: 30px;
+		line-height: 36px;
+		margin: 20px 0 12px;
+	}
+	.blog_carousel_block .swiper-slide {
+		min-height: 500px;
+	}
+	.blog_carousel_block .badge {
+		font-size: 14px;
+	}
+	.blog_carousel_block .bc-pagination {
+		right: 30px;
+		bottom: 30px;
+	}
+	.blog_post_left_image .post_info {
+		padding: 30px;
+		max-width: 100%;
+	}
+	.page_header {
+		padding: 150px 0 220px;
+	}
+	[class*=_details_section] .details_title {
+		font-size: 30px;
+		line-height: 36px;
+	}
+	.details_info_title {
+		font-size: 24px;
+		line-height: 34px;
+	}
+	iframe {
+		min-height: 300px;
+	}
+	.postabmin_block {
+		flex-direction: column;
+	}
+	.comment_item {
+		gap: 30px;
+	}
+	.comments_list > li .comments_list {
+		gap: 30px;
+		padding: 30px 0 0 60px;
+	}
+	.comment_form, .subscribe_box {
+		padding: 40px;
+	}
+	.subscribe_box .bell_icon {
+		top: 30px;
+		right: 30px;
+	}
+	.ico_newsletter_form .submit_btn {
+		width: 100%;
+		display: flex;
+		margin-top: 10px;
+		position: sticky;
+		text-align: center;
+		justify-content: center;
+	}
+	.page_title {
+		font-size: 42px;
+		line-height: 52px;
+		margin-bottom: 18px;
+	}
+	.contact_info_box {
+		padding: 40px;
+	}
+
+	.pepecoin_feature_section .shape_tree img {
+		margin-top: 0;
+	}
+}
+/* Media Screen 575px - End
+================================================== */
+
+/* Media Screen 425px - Start
+================================================== */
+@media (max-width: 425px) {
+	.site_header .ico_btn_outline {
+		padding: 14px 20px;
+	}
+	.site_header .btns_group {
+		margin: 0 0 0 -40px;
+	}
+	.ico_hero_section .shape_globe {
+		left: -30px;
+	}
+	.ico_hero_section .shape_coin {
+		right: -44px;
+	}
+	.ico_countdown_progress_box .countdown_timer_block {
+		gap: 15px;
+		>li:after {
+			display: none;
+		}
+	}
+	.progress_value {
+		gap: 6px;
+		margin-top: 16px;
+	}
+	.ico_hero_section .hero_title {
+		font-size: 42px;
+		line-height: 48px;
+	}
+	.ico_heading_block .heading_text {
+		font-size: 34px;
+		line-height: 42px;
+	}
+	.ico_coin_purchase_price .chart_image {
+		margin: 0;
+	}
+	.section_space {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.section_decoration .decoration_item:has(img[src*=shape_section_divider_]) {
+		top: 0;
+	}
+	.ico_tokenomics_section,
+	.ico_whitepaper_section {
+		margin-bottom: 60px;
+	}
+	.whitepaper_image_wrap {
+		padding: 50px 30px;
+	}
+	.ico_newsletter_form .submit_btn {
+		width: 100%;
+		position: static;
+		margin-top: 10px;
+	}
+	.memecoin_hero_section .hero_title {
+		font-size: 42px;
+		line-height: 48px;
+	}
+	.memecoin_heading_block .heading_text {
+		font-size: 30px;
+		line-height: 36px;
+	}
+	.meme_video_popup .title_text {
+		font-size: 20px;
+	}
+	.video_popup_block i {
+		font-size: 26px;
+		padding: 0 0 0 6px;
+	}
+	.video_popup_block {
+		width: 66px;
+		height: 66px;
+	}
+	.content_ticker_carousel {
+		padding: 10px 0;
+	}
+	.content_ticker_carousel .swiper-slide {
+		font-size: 50px;
+		margin: -6px 0 0;
+	}
+	.content_ticker_wrapper .shape_heart {
+		max-width: 80px;
+	}
+	.meme_eliments_section {
+		padding: 0;
+	}
+	.meme_site_footer .footer_heading {
+		font-size: 36px;
+		margin-bottom: 40px;
+	}
+	.meme_site_footer .btns_group {
+		margin-bottom: 70px;
+	}
+	.pepecoin_btn {
+		font-size: 16px;
+		padding: 14px 26px 13px;
+	}
+	.pepecoin_hero_section .shape_leaf_bottom {
+		bottom: -25px;
+	}
+	.pepecoin_hero_section {
+		padding: 150px 0 60px;
+	}
+	.pepecoin_heading_block .heading_text {
+		font-size: 36px;
+	}
+	.pepecoin_heading_block .heading_text:has(.shape_dot) .shape_dot {
+		max-width: 16px;
+		margin: -4px 0 0;
+	}
+	.pepecoin_heading_block .heading_text:has(.shape_dot) {
+		gap: 0 10px;
+	}
+	.pepecoin_heading_block .heading_description {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.pepecoin_about_section .shape_cloud {
+		top: 14%;
+		left: -50px;
+		max-width: 100px;
+	}
+	.pepecoin_feature_block {
+		padding: 90px 70px 70px;
+	}
+	.pepecoin_token_supply {
+		padding: 60px 30px 120px;
+	}
+	.pepecoin_token_supply .heading_text,
+	.pepecoin_token_supply .token_supply_value {
+		font-size: 26px;
+	}
+	.pepecoin_token_supply .image_block {
+		max-width: 160px;
+	}
+	.pepecoin_token_supply p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.pepecoin_token_supply [class*=shape_tree_wood_] {
+		bottom: -20px;
+		max-width: 84px;
+	}
+	.pepecoin_roadmap_section .shape_tree {
+		display: none;
+	}
+	.pepecoin_roadmap_list {
+		top: 50px;
+		gap: 67px;
+	}
+	.pepecoin_roadmap_section .shape_cartoon_1 {
+		left: 15px;
+		max-width: 70px;
+	}
+	.pepecoin_roadmap_section .shape_tree_wood {
+		max-width: 130px;
+	}
+	.pepecoin_roadmap_section .pepe_coin_image {
+		right: 4px;
+		bottom: 44px;
+		max-width: 60px;
+	}
+	.pepecoin_site_footer .shape_dragonfly {
+		top: 130px;
+		left: 15px;
+		max-width: 50px;
+	}
+	.pepecoin_site_footer .shape_cloud {
+		top: 90px;
+		right: 15px;
+		max-width: 80px;
+	}
+	.blog_carousel_block .swiper-slide {
+		min-height: 570px;
+	}
+	[class*=_details_section] .details_image {
+		margin-bottom: 60px;
+	}
+	.iframe_block {
+		margin-bottom: 50px;
+	}
+	iframe {
+		min-height: 220px;
+	}
+	.subscribe_box .bell_icon {
+		top: 6px;
+		right: 6px;
+	}
+	.contact_info_list {
+		a {
+			font-size: 18px;
+			line-height: 20px;
+		}
+	}
+	.meme_process_heading .cartoon_image .animate_line_image {
+		left: 74px;
+		max-width: 174px;
+	}
+	.meme_tokenomics_section .casino_image .coinpay_animate {
+		max-width: 127px;
+	}
+}
+/* Media Screen 425px - End
+================================================== */
+
+/* Media Screen 375px - Start
+================================================== */
+@media (max-width: 375px) {
+	.ico_partner_logo .logo_wrap img {
+		max-width: 94px;
+	}
+	.tab_block .nav .nav-link {
+		padding: 6px 20px;
+	}
+	.event_card_block .event_title {
+		font-size: 24px;
+		line-height: 30px;
+		margin-bottom: 30px;
+	}
+	.pepecoin_hero_section .hero_title {
+		font-size: 42px;
+	}
+	.pepecoin_hero_section .hero_description {
+		font-size: 18px;
+		margin: 0 0 30px 0;
+	}
+	.pepecoin_hero_image .pepe_coin_image img {
+		max-width: 190px;
+	}
+	.pepecoin_feature_section .shape_stone {
+		bottom: -10px;
+	}
+	.pepecoin_feature_section .shape_frog {
+		left: 15px;
+		max-width: 70px;
+	}
+	.pepecoin_feature_section .shape_dragonfly {
+		bottom: 60px;
+		max-width: 50px;
+	}
+	.pepecoin_roadmap_list > li {
+		font-size: 20px;
+	}
+	.pepecoin_roadmap_list {
+		top: 45px;
+		gap: 58px;
+	}
+	.pepecoin_site_footer .copyright_text {
+		font-size: 14px;
+	}
+	.pepecoin_site_footer .pepecoin_heading_block {
+		margin-bottom: 30px;
+	}
+	.pepecoin_site_footer {
+		padding: 110px 0 0;
+	}
+	.btns_group {
+		gap: 15px;
+	}
+	.meme_tokenomics_section .casino_image .coinpay_animate {
+		max-width: 115px;
+	}
+}
+/* Media Screen 375px - End
+================================================== */
+
+/* Media Screen 320px - Start
+================================================== */
+@media (max-width: 320px) {
+	.site_header .ico_btn_outline {
+		font-size: 14px;
+		padding: 10px 16px;
+	}
+	.mobile_menu_btn {
+		width: 34px;
+		height: 34px;
+		font-size: 18px;
+	}
+	.site_header .nav_wrapper {
+		padding: 20px 0;
+	}
+	.site_header .main_menu {
+		top: 74px;
+	}
+	.site_header.sticky .main_menu {
+		top: 54px;
+	}
+	.ico_hero_section {
+		padding: 120px 0 0;
+		margin-bottom: 100px;
+	}
+	.ico_about_image .coin_image img {
+		max-width: 210px;
+	}
+	.pepecoin_hero_image .pepe_coin_image img {
+		max-width: 150px;
+	}
+	.pepecoin_feature_block {
+		padding: 90px 60px 70px;
+	}
+	.pepecoin_roadmap_list > li {
+		font-size: 18px;
+	}
+	.pepecoin_roadmap_list {
+		top: 42px;
+		gap: 46px;
+	}
+	.meme_process_heading .cartoon_image .animate_line_image {
+		left: 62px;
+		max-width: 136px;
+	}
+	.meme_tokenomics_section .casino_image .coinpay_animate {
+		max-width: 100px;
+	}
+}
+/* Media Screen 320px - End
+================================================== */

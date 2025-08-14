@@ -1,0 +1,128 @@
+/* Table Of Content - start
+================================================== */
+/* 
+* Project Name   :  Coinpay - Crypto Currency Site Template.
+* File           :  CSS Base
+* Version        :  1.0.0
+* Author         :  XpressBuddy (https://themeforest.net/user/xpressbuddy/portfolio)
+* Developer			 :	webrok (https://www.fiverr.com/webrok?up_rollout=true)
+
+==================================================
+
+1 - Template Global Settings
+* - 1.01 - Template Fonts
+* - 1.02 - Template Reset
+
+2 - Template Blocks
+* - 2.01 - CSS Animations
+* - 2.02 - Spacing and Gaps
+* - 2.03 - Ordered and Unordered list
+* - 2.04 - Button
+* - 2.05 - Video
+* - 2.06 - Typography
+* - 2.07 - Form
+* - 2.08 - Social
+* - 2.09 - Pagelist
+* - 2.10 - Iconlist
+* - 2.11 - Tab
+* - 2.12 - Iconbox
+* - 2.13 - Event
+* - 2.14 - Roadmap
+* - 2.15 - Countdown
+* - 2.16 - Accordion
+* - 2.17 - ProgressBar
+* - 2.18 - Authorbox
+* - 2.19 - Pagination
+* - 2.20 - Team
+* - 2.21 - Partnerlogo
+* - 2.22 - Tokenomics
+* - 2.23 - Blog
+
+3 - Template Parts
+* - 3.01 - Site Header
+* - 3.02 - Site Footer
+* - 3.03 - Page Header
+* - 3.04 - Breadcrumb
+* - 3.05 - Sidebar
+
+4 - Template Patterns
+* - 4.01 - Hero Section
+* - 4.02 - Countdown Section
+* - 4.03 - About Section
+* - 4.04 - Table Section
+* - 4.05 - Chart Section
+* - 4.06 - Service Section
+* - 4.07 - Content Ticker Section
+* - 4.08 - Tokenomics Section
+* - 4.09 - Feature Section
+* - 4.10 - Roadmap Section
+* - 4.11 - Testimonial Section
+
+5 - Templates
+* - 5.01 - Home Pages
+* - 5.02 - Details Pages
+* - 5.03 - Contact Page
+* - 5.04 - Register Pages
+
+*/
+/* Table Of Content - end
+================================================== */
+
+// Template Global Settings
+@import 'variable';
+@import 'fonts';
+@import 'reset';
+
+// Template Blocks
+@import 'blocks/animation';
+@import 'blocks/space';
+@import 'blocks/list';
+@import 'blocks/button';
+@import 'blocks/video';
+@import 'blocks/typography';
+@import 'blocks/form';
+@import 'blocks/social';
+@import 'blocks/pagelist';
+@import 'blocks/iconlist';
+@import 'blocks/tab';
+@import 'blocks/iconbox';
+@import 'blocks/event';
+@import 'blocks/roadmap';
+@import 'blocks/countdown';
+@import 'blocks/accordion';
+@import 'blocks/progressBar';
+@import 'blocks/authorbox';
+@import 'blocks/pagination';
+@import 'blocks/team';
+@import 'blocks/partnerlogo';
+@import 'blocks/tokenomics';
+@import 'blocks/blog';
+
+// Template Parts
+@import 'template-parts/header';
+@import 'template-parts/footer';
+@import 'template-parts/pageheader';
+@import 'template-parts/breadcrumb';
+@import 'template-parts/sidebar';
+
+// Template Patterns
+@import 'patterns/hero';
+@import 'patterns/countdownSection';
+@import 'patterns/aboutSection';
+@import 'patterns/tableSection';
+@import 'patterns/chartSection';
+@import 'patterns/serviceSection';
+@import 'patterns/contentTickerSection';
+@import 'patterns/tokenomicsSection';
+@import 'patterns/featureSection';
+@import 'patterns/roadmapSection';
+@import 'patterns/testimonial';
+
+// Template Pages
+@import 'templates/home';
+@import 'templates/details';
+@import 'templates/contact';
+@import 'templates/register';
+
+// Template Responsive For Small Devices
+@import 'responsive';

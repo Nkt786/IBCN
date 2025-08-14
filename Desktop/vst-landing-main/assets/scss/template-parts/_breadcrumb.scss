@@ -1,0 +1,30 @@
+/* 3.04 - Breadcrumb - Start
+================================================== */
+.breadcrumb {
+	margin: 0;
+	>.breadcrumb-item {
+		color: #D4D5F1;
+		line-height: 1;
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		font-family: var(--bs-heading-font-family);
+		&.active {
+			color: #D4D5F1;
+		}
+		a {
+			color: #D4D5F1;
+			&:hover {
+				color: var(--bs-white);
+			}
+		}
+	}
+	.breadcrumb-item+.breadcrumb-item::before {
+		color: inherit;
+		content: "\f101";
+		font-family: 'Font Awesome 5 Pro';
+	}
+}
+/* 3.04 - Breadcrumb - End
+================================================== */

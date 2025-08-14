@@ -1,0 +1,18 @@
+/* 2.09 - Pagelist - Start
+================================================== */
+.pagelist_block {
+  &.unordered_list {
+    gap: 16px 50px;
+  }
+  a {
+    line-height: 1;
+    font-size: 16px;
+    color: var(--bs-heading-color);
+    font-family: var(--bs-heading-font-family);
+    &:hover {
+      color: var(--bs-primary);
+    }
+  }
+}
+/* 2.09 - Pagelist - End
+================================================== */

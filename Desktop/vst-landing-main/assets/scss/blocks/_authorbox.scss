@@ -1,0 +1,39 @@
+/* 2.18 - Authorbox - Start
+================================================== */
+.postabmin_block {
+  gap: 30px;
+  display: flex;
+  padding: 40px;
+  border-radius: 20px;
+  align-items: flex-start;
+  background-color: var(--bs-light);
+  border: 1px solid var(--bs-border-color);
+  .admin_image {
+    width: 150px;
+    height: 150px;
+    flex: 0 0 auto;
+    overflow: hidden;
+    border-radius: 100%;
+  }
+  .admin_name {
+    line-height: 1;
+    font-size: 22px;
+    margin-bottom: 4px;
+  }
+  .admin_designation {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .social_block.style_3 a {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid var(--bs-border-color);
+    &:hover {
+      color: var(--bs-white);
+      border-color: var(--bs-primary);
+    }
+  }
+}
+/* 2.18 - Authorbox - End
+================================================== */

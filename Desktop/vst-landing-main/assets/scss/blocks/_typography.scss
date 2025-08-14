@@ -1,0 +1,84 @@
+/* 2.06 - Typography - Start
+================================================== */
+
+// ICO Heading Block - Start
+.ico_heading_block {
+	margin-bottom: 52px;
+	.highlight_title {
+		z-index: 1;
+		line-height: 1;
+		padding: 0 20px;
+		font-size: 16px;
+		position: relative;
+		display: inline-block;
+		text-transform: uppercase;
+		&:before,
+		&:after {
+			top: 5px;
+			content: '';
+			width: 8px;
+			height: 8px;
+			position: absolute;
+			border-radius: 100%;
+			background-color: var(--bs-light);
+			background-image: radial-gradient(#5349CA, transparent);
+		}
+		&:before {
+			left: 0;
+		}
+		&:after {
+			right: 0;
+		}
+	}
+	.heading_text {
+		font-size: 50px;
+		line-height: 62px;
+		letter-spacing: -0.4px;
+	}
+}
+// ICO Heading Block - End
+
+// Memecoin Heading Block - Start
+.memecoin_heading_block {
+	margin-bottom: 56px;
+	.heading_text {
+		font-size: 54px;
+		font-weight: 400;
+		line-height: 64px;
+		margin-bottom: 14px;
+	}
+	.heading_description {
+		font-size: 18px;
+		line-height: 26px;
+	}
+}
+// Memecoin Heading Block - End
+
+// Memecoin Heading Block - Start
+.pepecoin_heading_block {
+	margin-bottom: 56px;
+	.heading_text {
+		line-height: 1;
+		font-size: 80px;
+		font-weight: 400;
+		margin-bottom: 14px;
+		&:has(.shape_dot) {
+			gap: 0 30px;
+			display: inline-flex;
+			.shape_dot {
+				display: block;
+				flex: 0 0 auto;
+				max-width: 60px;
+				margin: -8px 0 0;
+			}
+		}
+	}
+	.heading_description {
+		font-size: 24px;
+		line-height: 34px;
+	}
+}
+// Memecoin Heading Block - End
+
+/* 2.06 - Typography - End
+================================================== */

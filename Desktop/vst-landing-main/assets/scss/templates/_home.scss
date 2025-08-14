@@ -1,0 +1,191 @@
+/* 5.01 - Home Pages - Start
+================================================== */
+
+// Index ICO - Start
+.index_ico {
+	--bs-body-font-family: "DM Sans", serif;
+	--bs-heading-font-family: "Roobert PRO Bold";
+	--bs-body-bg: #070710;
+	--bs-body-bg-rgb: 7, 7, 16;
+	--bs-body-color: #D4D5F1;
+	--bs-body-color-rgb: 212, 213, 241;
+	--bs-heading-color: #CCCEEF;
+	--bs-light: #0F1021;
+	--bs-light-rgb: 15, 16, 33;
+	--bs-primary: #FF3BD4;
+	--bs-primary-rgb: 255, 59, 212;
+	--bs-secondary: #7130C3;
+	--bs-secondary-rgb: 113, 48, 195;
+	--bs-border-color: #2F336D;
+	--bs-border-color-translucent: 47, 51, 109;
+	--bs-dark: #070710;
+	--bs-dark-rgb: 7, 7, 16;
+
+	.mobile_menu_btn {
+		&:not(:hover) {
+			border-color: rgba(255, 255, 255, 0.30);
+		}
+	}
+
+	.dropdown-menu {
+		>li {
+			&.active,
+			&:hover {
+				>.dropdown-item {
+					background-color: #0f1021;
+				}
+			}
+		}
+	}
+
+	.iframe_block {
+		background-color: var(--bs-secondary);
+		iframe {
+			mix-blend-mode: luminosity;
+		}
+	}
+
+	.progress {
+		background-color: rgba(255, 255, 255, 0.10);
+		.progress-bar {
+			background: linear-gradient(90deg, var(--bs-primary), var(--bs-secondary));
+		}
+	}
+
+	.blog_section,
+	.contact_section,
+	.register_section,
+	[class*="_details_section"] {
+		--bs-border-color: #21234B;
+		--bs-border-color-translucent: 33, 35, 75;
+	}
+}
+// Index ICO - End
+
+// Index Memecoin - Start
+.index_memecoin {
+	--bs-body-font-family: "Bricolage Grotesque", serif;
+	--bs-heading-font-family: "Dela Gothic One", serif;
+	--bs-body-bg: #040612;
+	--bs-body-bg-rgb: 4, 6, 18;
+	--bs-body-color: #DCDEE9;
+	--bs-body-color-rgb: 220, 222, 233;
+	--bs-heading-color: #FFFFFF;
+	--bs-light: #C5F57D;
+	--bs-light-rgb: 197, 245, 125;
+	--bs-primary: #0E9462;
+	--bs-primary-rgb: 14, 148, 98;
+	--bs-secondary: #FFCC00;
+	--bs-secondary-rgb: 255, 204, 0;
+	--bs-border-color: #0E9462;
+	--bs-border-color-translucent: 14, 148, 98;
+	--bs-dark: var(--bs-body-bg);
+	--bs-dark-rgb: var(--bs-body-bg-rgb);
+
+	.cb-cursor:before {
+		background: var(--bs-secondary);
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 400;
+	}
+
+	mark {
+		font-weight: 400;
+		color: var(--bs-light);
+	}
+
+	.line-1,
+	.line-2,
+	.line-3,
+	.line-4 {
+		background: var(--bs-primary);
+	}
+
+	.countdown_timer_block {
+		gap: 15px;
+		>li {
+			gap: 4px;
+			width: 100px;
+			height: 80px;
+			background-color: #070710;
+			&:after {
+				display: none;
+			}
+		}
+		span {
+			font-size: 26px;
+			font-weight: 400;
+		}
+	}
+
+	.progress {
+		background-color: rgba(255, 255, 255, 0.10);
+		.progress-bar {
+			background: linear-gradient(90deg, var(--bs-primary), var(--bs-light));
+			&:after {
+				color: var(--bs-dark);
+			}
+		}
+	}
+
+	.social_block a {
+		width: 44px;
+		height: 44px;
+		border: none;
+		border-radius: 10px;
+		color: var(--bs-white);
+		background-color: var(--bs-primary);
+		&:hover {
+			color: var(--bs-dark);
+			background-color: var(--bs-secondary);
+		}
+	}
+
+	.pagelist_block a {
+		&:hover {
+			color: var(--bs-light);
+		}
+	}
+}
+// Index Memecoin - End
+
+// Index Pepecoin - Start
+.index_pepecoin {
+	--bs-body-font-family: "Nunito Sans", serif;
+	--bs-heading-font-family: "Lilita One", serif;
+	--bs-body-bg: #FFF7AF;
+	--bs-body-bg-rgb: 255, 247, 175;
+	--bs-body-color: #113B1E;
+	--bs-body-color-rgb: 17, 59, 30;
+	--bs-heading-color: #113B1E;
+	--bs-primary: #0B902B;
+	--bs-primary-rgb: 11, 144, 43;
+	--bs-secondary: #FBE354;
+	--bs-secondary-rgb: 251, 227, 84;
+	--bs-dark: #232222;
+	--bs-dark-rgb: 35, 34, 34;
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 400;
+	}
+
+	mark {
+		font-weight: 400;
+		color: var(--bs-secondary);
+	}
+
+	.backtotop .scroll {
+		color: var(--bs-white);
+		border: var(--bs-dark);
+		background-color: var(--bs-dark);
+	}
+
+	.dropdown-menu {
+		box-shadow: 0 30px 50px rgba(0, 0, 0, 0.2);
+	}
+}
+// Index Pepecoin - End
+
+/* 5.01 - Home Pages - End
+================================================== */

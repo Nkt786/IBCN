@@ -1,0 +1,185 @@
+/* 2.13 - Event - Start
+================================================== */
+
+// ICO Event Section - Start
+.ico_event_section {
+	[class*="shape_shadow_"] {
+		width: 252px;
+		filter: blur(100px);
+	}
+	.shape_shadow_1 {
+		top: 50%;
+		left: -100px;
+	}
+	.shape_shadow_2 {
+		top: 110%;
+		right: -100px;
+	}
+}
+// ICO Event Section - End
+
+// Event Block Left Image - Start
+.event_loop_builder:has(.event_block_left_image) {
+	gap: 20px;
+}
+
+.event_block_left_image {
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+	border-radius: 15px;
+	background-color: var(--bs-light);
+	border: 1px solid var(--bs-border-color);
+	.event_image {
+		display: block;
+		flex: 0 0 auto;
+		overflow: hidden;
+		max-width: 249px;
+		position: relative;
+		background: linear-gradient(0deg, #7130C3, #FC6500);
+		img {
+			mix-blend-mode: luminosity;
+			transition: var(--bs-transition);
+		}
+		.event_date {
+			left: 0;
+			right: 0;
+			top: 50%;
+			z-index: 2;
+			opacity: 0;
+			line-height: 1;
+			font-size: 24px;
+			padding: 0 15px;
+			position: absolute;
+			text-align: center;
+			color: var(--bs-white);
+			transform: translateY(-50%);
+			transition: var(--bs-transition);
+			font-family: var(--bs-heading-font-family);
+		}
+	}
+	.event_info {
+		padding: 30px;
+	}
+	.event_location {
+		line-height: 1;
+		font-size: 16px;
+		margin-bottom: 16px;
+		i {
+			margin-right: 4px;
+		}
+	}
+	.event_title {
+		font-size: 20px;
+		line-height: 28px;
+		&:hover {
+			a {
+				color: var(--bs-white);
+			}
+		}
+	}
+
+	&:hover {
+		.event_image {
+			img {
+				opacity: 0.2;
+			}
+			.event_date {
+				opacity: 1;
+			}
+		}
+	}
+}
+// Event Block Left Image - End
+
+// Event Card Block - Start
+.event_card_block {
+	overflow: hidden;
+	position: relative;
+	border-radius: 15px;
+	background-color: var(--bs-light);
+	border: 1px solid var(--bs-border-color);
+	.event_image {
+		display: block;
+		overflow: hidden;
+		// background: linear-gradient(0deg, #7130C3, #FC6500);
+		img {
+			// mix-blend-mode: luminosity;
+			transition: var(--bs-transition);
+		}
+		&:hover {
+			img {
+				transform: scale(1.09);
+			}
+		}
+	}
+	.event_date {
+		gap: 14px;
+		z-index: 2;
+		right: 1px;
+		width: 25%;
+		bottom: -1px;
+		height: 162px;
+		display: flex;
+		padding: 0 30px;
+		text-align: center;
+		position: absolute;
+		border-style: solid;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		border-width: 0 0 0 1px;
+		border-color: var(--bs-secondary);
+		i {
+			width: 42px;
+			height: 42px;
+			flex: 0 0 auto;
+			border-radius: 100%;
+			align-items: center;
+			display: inline-flex;
+			justify-content: center;
+			background-color: var(--bs-border-color);
+		}
+		span {
+			font-size: 20px;
+			line-height: 1.2;
+			letter-spacing: -0.4px;
+			color: var(--bs-heading-color);
+			font-family: var(--bs-heading-font-family);
+		}
+	}
+	.event_info {
+		width: 75%;
+		z-index: 1;
+		margin: -87px 0 0;
+		position: relative;
+		border-style: solid;
+		border-radius: 0 15px 0 0;
+		border-width: 1px 1px 0 0;
+		padding: 30px 40px 40px 30px;
+		background-color: var(--bs-light);
+		border-color: var(--bs-border-color);
+	}
+	.event_location {
+		line-height: 1;
+		font-size: 16px;
+		margin-bottom: 16px;
+		i {
+			margin-right: 4px;
+		}
+	}
+	.event_title {
+		font-size: 28px;
+		line-height: 36px;
+		margin-bottom: 37px;
+		&:hover {
+			a {
+				color: var(--bs-white);
+			}
+		}
+	}
+}
+// Event Card Block - End
+
+/* 2.13 - Event - End
+================================================== */

@@ -1,0 +1,52 @@
+/* 4.10 - Roadmap Section - Start
+================================================== */
+.pepecoin_roadmap_section {
+	background-image: radial-gradient(#3CA72F, var(--bs-primary));
+	.shape_tree {
+		bottom: 0;
+		left: -800px;
+		max-width: 1350px;
+	}
+	.shape_stone {
+		z-index: 1;
+		left: -50px;
+		right: -50px;
+		bottom: -70px;
+	}
+	.shape_cartoon_1 {
+		left: 16%;
+		z-index: 2;
+		bottom: 16px;
+		max-width: 320px;
+	}
+	.shape_tree_wood {
+		right: 0;
+		bottom: 0;
+		max-width: 480px;
+	}
+	.pepe_coin_image {
+		right: 128px;
+		bottom: 170px;
+		max-width: 260px;
+		img {
+			animation: coinFlip 4s infinite linear;
+		}
+	}
+}
+
+.pepecoin_roadmap_list {
+	top: 86px;
+	left: 50%;
+	gap: 124px;
+	width: 100%;
+	position: absolute;
+	transform: translateX(-50%);
+	>li {
+		line-height: 1;
+		font-size: 44px;
+		color: var(--bs-heading-color);
+		font-family: var(--bs-heading-font-family);
+	}
+}
+/* 4.10 - Roadmap Section - End
+================================================== */

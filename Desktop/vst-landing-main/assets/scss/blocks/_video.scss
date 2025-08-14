@@ -1,0 +1,52 @@
+/* 2.05 - Video - Start
+================================================== */
+.video_popup_block {
+	z-index: 1;
+	width: 70px;
+	height: 70px;
+	flex: 0 0 auto;
+	position: relative;
+	align-items: center;
+	border-radius: 100%;
+	display: inline-flex;
+	justify-content: center;
+	background-color: var(--bs-light);
+	border: 5px solid var(--bs-primary);
+	&:before,
+	&:after {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+		z-index: -1;
+		content: '';
+		position: absolute;
+		border-radius: 100%;
+		transition: all 0.33s ease;
+		border: 1px solid var(--bs-primary);
+		animation: ripple 1.5s linear infinite;
+	}
+	&:before {
+		animation-delay: 0.1s;
+	}
+
+	&:after {
+		animation-delay: 0.9s;
+	}
+	i {
+		display: flex;
+		font-size: 36px;
+		padding: 0 0 0 8px;
+		align-items: center;
+		border-radius: inherit;
+		justify-content: center;
+		width: calc(100% - 8px);
+		height: calc(100% - 8px);
+		transition: var(--bs-transition);
+		background-color: var(--bs-primary);
+		text-shadow: 0 2px 0 rgba(0, 0, 0, 0.20);
+	}
+}
+/* 2.05 - Video - End
+================================================== */

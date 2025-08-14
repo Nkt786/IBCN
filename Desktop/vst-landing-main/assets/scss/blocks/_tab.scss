@@ -1,0 +1,30 @@
+/* 2.11 - Tab - Start
+================================================== */
+.tab_block {
+	.nav {
+		gap: 2px;
+		padding: 8px;
+		place-self: center;
+		border-radius: 10px;
+		margin-bottom: 70px;
+		border: 1px solid var(--bs-border-color);
+		.nav-link {
+			font-size: 16px;
+			padding: 6px 30px;
+			line-height: 30px;
+			border-radius: 6px;
+			letter-spacing: -0.2px;
+			color: var(--bs-heading-color);
+			font-family: var(--bs-heading-font-family);
+			&:not(.active):hover {
+				color: var(--bs-white);
+			}
+			&.active {
+				color: var(--bs-white);
+				background-color: var(--bs-border-color);
+			}
+		}
+	}
+}
+/* 2.11 - Tab - End
+================================================== */
