@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 20% 97%; /* Warm White #FAFAF7 */
+    --foreground: 215 50% 10%; /* Very Dark Charcoal / Almost Black #0F172A */
+    --card: 0 0% 100%; /* Pure White #FFFFFF */
+    --card-foreground: 215 50% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 50% 10%;
+    --primary: 158 78% 27%; /* Deep Emerald Green #0F7B53 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 146 54% 91%; /* Soft Sage Green #DDF4E7 */
+    --secondary-foreground: 215 50% 10%;
+    --muted: 220 13% 91%; /* Soft Gray #E5E7EB */
+    --muted-foreground: 220 9% 46%; /* Slate Gray #6B7280 */
+    --accent: 44 100% 48%; /* Warm Gold #F4B400 */
+    --accent-foreground: 215 28% 17%;
+    --destructive: 0 84% 60%; /* Soft Red #EF4444 */
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%; /* Soft Gray #E5E7EB */
+    --input: 220 13% 91%;
+    --ring: 158 78% 27%;
+    --radius: 0.75rem;
+    --sidebar-background: 215 28% 17%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 158 78% 27%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 28% 25%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 215 28% 25%;
+    --sidebar-ring: 158 78% 27%;
+
+    --gold: 44 100% 48%;
+    --gold-light: 44 100% 70%;
+    --cream: 60 20% 97%;
+    --cream-dark: 146 54% 91%;
+    --green-deep: 158 78% 27%;
+    --green-light: 142 71% 45%; /* Fresh Lime #22C55E */
+    --green-pale: 146 54% 91%;
+  }
+
+  .dark {
+    --background: 150 20% 5%;
+    --foreground: 60 20% 97%;
+    --card: 150 20% 8%;
+    --card-foreground: 60 20% 97%;
+    --popover: 150 20% 8%;
+    --popover-foreground: 60 20% 97%;
+    --primary: 158 78% 30%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 150 20% 12%;
+    --secondary-foreground: 60 20% 97%;
+    --muted: 150 20% 15%;
+    --muted-foreground: 150 10% 65%;
+    --accent: 44 100% 48%;
+    --accent-foreground: 150 20% 5%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 150 20% 16%;
+    --input: 150 20% 16%;
+    --ring: 158 78% 30%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-green-light;
+  }
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-md border border-border/50 shadow-lg;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
